@@ -1,382 +1,1197 @@
-﻿Log file open, 04/01/15 15:14:45
+﻿Log file open, 04/09/15 11:12:56
 LogInit:Display: Running engine for game: FirstPersonProject
-LogInit: Version: 4.7.3-2479750+++depot+UE4-Releases+4.7
+LogInit: Version: 4.7.5-2503383+++depot+UE4-Releases+4.7
 LogInit: API Version: 2455222
-LogInit: Compiled (64-bit): Mar 15 2015 23:20:45
+LogInit: Compiled (64-bit): Apr  6 2015 23:21:51
 LogInit: Compiled with Visual C++: 18.00.21005.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++depot+UE4-Releases+4.7
 LogInit: Command line:  
 LogInit: Base directory: E:/Program Files (x86)/Epic Games/4.7/Engine/Binaries/Win64/
 LogInit: Rocket: 1
-[2015.04.01-12.14.45:535][  0]LogTaskGraph: Started task graph with 3 named threads and 6 total threads.
-[2015.04.01-12.14.45:597][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
-[2015.04.01-12.14.45:693][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2015.04.01-12.14.45:703][  0]LogInit: Object subsystem initialized
-[2015.04.01-12.14.45:705][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'TranslucentSortAxis = (X=0.000000,Y=-1.000000,Z=0.000000)'
-[2015.04.01-12.14.45:705][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Builds/FirstPersonProject/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
-[2015.04.01-12.14.45:705][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleRule = ShortestSide'
-[2015.04.01-12.14.45:705][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Builds/FirstPersonProject/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
-[2015.04.01-12.14.45:705][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleCurve = (EditorCurveData=(Keys=),ExternalCurve=None)'
-[2015.04.01-12.14.45:705][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Builds/FirstPersonProject/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
-[2015.04.01-12.14.45:706][  0]LogInit: Selected Device Profile: [Windows]
-[2015.04.01-12.14.45:706][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2015.04.01-12.14.45:731][  0]LogInit: Computer: TATU-PC
-[2015.04.01-12.14.45:731][  0]LogInit: User: tatu
-[2015.04.01-12.14.45:731][  0]LogInit: CPU Page size=4096, Cores=4
-[2015.04.01-12.14.45:731][  0]LogInit: High frequency timer resolution =3.330146 MHz
-[2015.04.01-12.14.45:731][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx) Virtual=8192.0GB
-[2015.04.01-12.14.45:731][  0]LogMemory: Platform Memory Stats for Windows
-[2015.04.01-12.14.45:731][  0]LogMemory: Process Physical Memory: 47.22 MB used, 47.22 MB peak
-[2015.04.01-12.14.45:731][  0]LogMemory: Process Virtual Memory: 27.51 MB used, 27.51 MB peak
-[2015.04.01-12.14.45:731][  0]LogMemory: Physical Memory: 4167.85 MB used, 8143.80 MB total
-[2015.04.01-12.14.45:731][  0]LogMemory: Virtual Memory: 281.54 MB used, 8388608.00 MB total
-[2015.04.01-12.14.45:831][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 560 Ti (Feature Level 11_0)
-[2015.04.01-12.14.45:832][  0]LogD3D11RHI: Adapter has 977MB of dedicated video memory, 0MB of dedicated system memory, and 3071MB of shared system memory, 2 output[s]
-[2015.04.01-12.14.45:832][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2015.04.01-12.14.45:840][  0]LogRHI: Texture pool is 684 MB (70% of 977 MB)
-[2015.04.01-12.14.45:850][  0]LogD3D11RHI: Async texture creation enabled
-[2015.04.01-12.14.46:719][  0]LogTextLocalizationManager: The requested culture ('fi_FI') has no localization data; falling back to 'en' for localization and internationalization data.
-[2015.04.01-12.14.46:880][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:UICommands, Key:Save_ToolTip):
+[2015.04.09-08.12.56:306][  0]LogTaskGraph: Started task graph with 3 named threads and 6 total threads.
+[2015.04.09-08.12.56:380][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
+[2015.04.09-08.12.56:524][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.04.09-08.12.56:539][  0]LogInit: Object subsystem initialized
+[2015.04.09-08.12.56:542][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'TranslucentSortAxis = (X=0.000000,Y=-1.000000,Z=0.000000)'
+[2015.04.09-08.12.56:542][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Builds/FirstPersonProject/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2015.04.09-08.12.56:542][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleRule = ShortestSide'
+[2015.04.09-08.12.56:542][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Builds/FirstPersonProject/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2015.04.09-08.12.56:542][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleCurve = (EditorCurveData=(Keys=),ExternalCurve=None)'
+[2015.04.09-08.12.56:542][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Builds/FirstPersonProject/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2015.04.09-08.12.56:545][  0]LogInit: Selected Device Profile: [Windows]
+[2015.04.09-08.12.56:545][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.04.09-08.12.56:582][  0]LogInit: Computer: TATU-PC
+[2015.04.09-08.12.56:582][  0]LogInit: User: tatu
+[2015.04.09-08.12.56:582][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.04.09-08.12.56:582][  0]LogInit: High frequency timer resolution =3.330126 MHz
+[2015.04.09-08.12.56:582][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx) Virtual=8192.0GB
+[2015.04.09-08.12.56:582][  0]LogMemory: Platform Memory Stats for Windows
+[2015.04.09-08.12.56:582][  0]LogMemory: Process Physical Memory: 47.33 MB used, 47.33 MB peak
+[2015.04.09-08.12.56:582][  0]LogMemory: Process Virtual Memory: 23.52 MB used, 23.52 MB peak
+[2015.04.09-08.12.56:582][  0]LogMemory: Physical Memory: 3703.71 MB used, 8143.80 MB total
+[2015.04.09-08.12.56:582][  0]LogMemory: Virtual Memory: 277.79 MB used, 8388608.00 MB total
+[2015.04.09-08.12.56:735][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 560 Ti (Feature Level 11_0)
+[2015.04.09-08.12.56:735][  0]LogD3D11RHI: Adapter has 977MB of dedicated video memory, 0MB of dedicated system memory, and 3071MB of shared system memory, 2 output[s]
+[2015.04.09-08.12.56:735][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.04.09-08.12.56:739][  0]LogRHI: Texture pool is 684 MB (70% of 977 MB)
+[2015.04.09-08.12.56:751][  0]LogD3D11RHI: Async texture creation enabled
+[2015.04.09-08.12.57:489][  0]LogTextLocalizationManager: The requested culture ('fi_FI') has no localization data; falling back to 'en' for localization and internationalization data.
+[2015.04.09-08.12.57:642][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:UICommands, Key:Save_ToolTip):
 Resource: (E:/Program Files (x86)/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (-29098895) String: (Saves the current level to disk)
 Resource: (E:/Program Files (x86)/Epic Games/4.7/Engine/Content/Localization/Engine/en/Engine.locres) Hash: (-1280300587) String: (Save selected data to vlog file)
-[2015.04.01-12.14.46:881][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:ContentBrowser, Key:ImportAssetToolTip):
+[2015.04.09-08.12.57:643][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:ContentBrowser, Key:ImportAssetToolTip):
 Resource: (E:/Program Files (x86)/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (-630476809) String: (Import to {0}...)
 Resource: (E:/Program Files (x86)/Epic Games/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (1271782899) String: (Imports an asset from file to this folder.)
-[2015.04.01-12.14.46:974][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2015.04.01-12.14.51:778][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.04.01-12.14.53:034][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.04.01-12.14.53:175][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2015.04.01-12.14.53:299][  0]LogDerivedDataCache: Loaded boot cache 0.12s 39MB C:/Users/tatu/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
-[2015.04.01-12.14.53:299][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/tatu/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc
-[2015.04.01-12.14.53:300][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Builds/FirstPersonProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2015.04.01-12.14.53:300][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2015.04.01-12.14.53:499][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2015.04.01-12.14.53:512][  0]LogDerivedDataCache: Using Local data cache path C:/Users/tatu/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2015.04.01-12.14.56:897][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2015.04.01-12.14.56:897][  0]LogMeshUtilities: No automatic mesh merging module available
-[2015.04.01-12.14.58:316][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2015.04.01-12.14.58:598][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf'
-[2015.04.01-12.15.13:501][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2015.04.01-12.15.14:281][  0]SourceControl: Info Source control is disabled
-[2015.04.01-12.15.14:281][  0]SourceControl: Info Source control is disabled
-[2015.04.01-12.15.14:281][  0]SourceControl: Info Source control is disabled
-[2015.04.01-12.15.14:281][  0]LogSourceControl: RunCommandInternalRaw: 'git version'
-[2015.04.01-12.15.14:281][  0]LogSourceControl: RunCommandInternalRaw: ExecProcess ReturnCode=2 OutResults=''
-[2015.04.01-12.15.14:297][  0]SourceControl: Info Source control is disabled
-[2015.04.01-12.15.15:222][  0]LogObj: 24231 objects as part of root set at end of initial load.
-[2015.04.01-12.15.15:222][  0]LogUObjectAllocator: 5136440 out of 0 bytes used by permanent object pool.
-[2015.04.01-12.15.15:463][  0]LogEngine: Initializing Engine...
-[2015.04.01-12.15.18:049][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2015.04.01-12.15.18:062][  0]LogInit: FAudioDevice initialized.
-[2015.04.01-12.15.18:146][  0]LogAIModule: Creating AISystem for world NewWorld
-[2015.04.01-12.15.18:180][  0]LogDerivedDataCache: Saved boot cache 0.03s 39MB C:/Users/tatu/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
-[2015.04.01-12.15.18:186][  0]LogInit: Texture streaming: Enabled
-[2015.04.01-12.15.18:702][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2015.04.01-12.15.18:702][  0]LogAnalytics: ET APIKey = Rocket.Release. APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.7.3-2479750+++depot+UE4-Releases+4.7
-[2015.04.01-12.15.18:702][  0]LogAnalytics: ET APIKey = Rocket.Release. DataRouterUploadURL = https://datarouter-public-service-gamedev.ol.epicgames.net/datarouter/api/v1/public/data. AppVersion = 4.7.3-2479750+++depot+UE4-Releases+4.7
-[2015.04.01-12.15.18:716][  0]LogAnalytics: SetUserId ed28b9a54144e66a2558d885e32da194|6804c67793284305bec8d08e6143faee|73e155b7-cb16-4ea6-b80c-c0e38ba520d3
-[2015.04.01-12.15.18:716][  0]LogAnalytics: AnalyticsET::StartSession [Rocket.Release]
-[2015.04.01-12.15.19:071][  0]LogInit: Transaction tracking system initialized
-[2015.04.01-12.15.19:815][  0]BlueprintLog: New page: Editor Load
-[2015.04.01-12.15.19:883][  0]LogAssetRegistry: FAssetRegistry took 0.0102 seconds to start up
-[2015.04.01-12.15.19:884][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for ../../../Engine/Plugins/Experimental/CharacterAI/Content/. Error: 0
-[2015.04.01-12.15.21:809][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.04.01-12.15.22:357][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.04.01-12.15.24:121][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Regular.ttf'
-[2015.04.01-12.15.24:122][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Bold.ttf'
-[2015.04.01-12.15.24:284][  0]LogConsoleResponse:Display: 
-[2015.04.01-12.15.26:006][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2015.04.01-12.15.27:548][  0]SourceControl: Info Source control is disabled
-[2015.04.01-12.15.27:549][  0]Cmd: MAP LOAD FILE="D:/Builds/FirstPersonProject/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2015.04.01-12.15.27:549][  0]LightingResults: New page: Lighting Build
-[2015.04.01-12.15.27:572][  0]MapCheck: New page: Map Check
-[2015.04.01-12.15.27:572][  0]LightingResults: New page: Lighting Build
-[2015.04.01-12.15.27:579][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000013A42520
-[2015.04.01-12.15.28:268][  0]LogLinker:Warning: Asset '../../../Engine/Content/EngineMeshes/Humanoid.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.04.01-12.15.31:601][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave FirstPerson_WeaponFire...
-[2015.04.01-12.15.31:842][  0]LogMaterial: Missing cached shader map for material CubeMaterial, compiling. 
-[2015.04.01-12.15.32:208][  0]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
-[2015.04.01-12.15.35:584][  0]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT)
-[2015.04.01-12.15.36:950][  0]LogTexture:Display: Building textures: HQ_Lightmap1_3 (AutoDXT)
-[2015.04.01-12.15.38:013][  0]LogTexture:Display: Building textures: HQ_Lightmap1_4 (AutoDXT)
-[2015.04.01-12.15.38:843][  0]LogTexture:Display: Building textures: HQ_Lightmap1_5 (AutoDXT)
-[2015.04.01-12.15.39:675][  0]LogTexture:Display: Building textures: HQ_Lightmap1_6 (AutoDXT)
-[2015.04.01-12.15.40:373][  0]LogTexture:Display: Building textures: HQ_Lightmap1_7 (AutoDXT)
-[2015.04.01-12.15.41:151][  0]LogTexture:Display: Building textures: HQ_Lightmap1_8 (AutoDXT)
-[2015.04.01-12.15.41:349][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
-[2015.04.01-12.15.42:535][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1)
-[2015.04.01-12.15.42:839][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_3 (DXT1)
-[2015.04.01-12.15.43:152][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_4 (DXT1)
-[2015.04.01-12.15.43:431][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_5 (DXT1)
-[2015.04.01-12.15.43:704][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_6 (DXT1)
-[2015.04.01-12.15.43:968][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_7 (DXT1)
-[2015.04.01-12.15.44:192][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_8 (DXT1)
-[2015.04.01-12.15.44:225][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_10 (BGRA8)
-[2015.04.01-12.15.44:416][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_11 (BGRA8)
-[2015.04.01-12.15.44:596][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_12 (BGRA8)
-[2015.04.01-12.15.44:812][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_13 (BGRA8)
-[2015.04.01-12.15.45:048][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_14 (BGRA8)
-[2015.04.01-12.15.45:209][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_15 (BGRA8)
-[2015.04.01-12.15.45:335][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_8 (BGRA8)
-[2015.04.01-12.15.46:159][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_9 (BGRA8)
-[2015.04.01-12.15.46:412][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2015.04.01-12.15.46:412][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2015.04.01-12.15.46:413][  0]Cmd: MAP CHECKDEP
-[2015.04.01-12.15.46:413][  0]MapCheck: New page: FirstPersonExampleMap - Apr 1, 2015, 6:15:46 PM
-[2015.04.01-12.15.46:537][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 123.851ms to complete.
-[2015.04.01-12.15.46:537][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 18.989
-[2015.04.01-12.15.46:881][  0]LogCollectionManager: Loaded 0 collections in 0.002053 seconds
-[2015.04.01-12.15.46:889][  0]LogContentBrowser: Native class hierarchy populated in 0.0080 seconds. Added 1696 classes and 261 folders.
-[2015.04.01-12.15.46:981][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0017 seconds. Added 1 classes and 2 folders.
-[2015.04.01-12.15.47:225][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2015.04.01-12.15.47:227][  0]LogSlate:Warning: Failed to load font data from 'Veranda'
-[2015.04.01-12.15.47:239][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2015.04.01-12.15.47:272][  0]LogLoad: Full Startup: 66.36 seconds (BP compile: 1.23 seconds)
-[2015.04.01-12.15.47:629][  0]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/AIBots/SleepingAIBot'
-[2015.04.01-12.15.47:893][  0]LogRenderer:Warning: Reallocating scene render targets to support 32x32 (Frame:2).
-[2015.04.01-12.15.48:123][  0]LogRenderer:Warning: Reallocating scene render targets to support 1208x576 (Frame:4).
-[2015.04.01-12.15.49:196][  4]LogAssetRegistry: Asset discovery search completed in 29.3241 seconds
-[2015.04.01-12.15.57:317][168]LogPlayLevel: PIE:  No blueprints needed recompiling
-[2015.04.01-12.15.57:318][168]PIE: New page: PIE session: FirstPersonExampleMap (Apr 1, 2015, 6:15:57 PM)
-[2015.04.01-12.15.57:344][168]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026087s)
-[2015.04.01-12.15.57:345][168]LogPlayLevel: PIE: World Init took: (0.000779s)
-[2015.04.01-12.15.57:345][168]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.027111s)
-[2015.04.01-12.15.57:488][168]LogWorld: Game class is 'FirstPersonGameMode_C'
-[2015.04.01-12.15.57:490][168]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2015.04.01-12.15.57:502][168]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
-[2015.04.01-12.15.57:502][168]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.01-15.15.57
-[2015.04.01-12.15.57:506][168]LogWorld: Bringing up level for play took: 0.015542
-[2015.04.01-12.15.57:510][168]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.199
-[2015.04.01-12.16.33:543][  6]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.04.01-12.16.33:543][  6]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_0) Not registered. Aborting.
-[2015.04.01-12.16.33:573][  6]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service BTS_botDetectEnemy_C_0 with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: None.  OwnerComponent has BeginDestroyed flag
-[2015.04.01-12.16.33:574][  6]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service BTS_DetectSound_C_0 with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: None.  OwnerComponent has BeginDestroyed flag
-[2015.04.01-12.16.33:582][  6]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000B23DDA0
-[2015.04.01-12.17.38:636][820]BlueprintLog: New page: Compile BTT_Sleep
-[2015.04.01-12.17.38:681][820]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.04.01-12.17.38:706][820]BlueprintEditorCompileResults: Info [0177.79] Compile of BTT_Sleep successful! [in 70 ms]
-[2015.04.01-12.17.49:271][416]LogPlayLevel: PIE:  No blueprints needed recompiling
-[2015.04.01-12.17.49:271][416]PIE: New page: PIE session: FirstPersonExampleMap (Apr 1, 2015, 6:17:49 PM)
-[2015.04.01-12.17.49:296][416]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024048s)
-[2015.04.01-12.17.49:297][416]LogPlayLevel: PIE: World Init took: (0.001116s)
-[2015.04.01-12.17.49:297][416]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.025549s)
-[2015.04.01-12.17.49:340][416]LogWorld: Game class is 'FirstPersonGameMode_C'
-[2015.04.01-12.17.49:342][416]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2015.04.01-12.17.49:350][416]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
-[2015.04.01-12.17.49:350][416]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.01-15.17.49
-[2015.04.01-12.17.49:352][416]LogWorld: Bringing up level for play took: 0.010016
-[2015.04.01-12.17.49:353][416]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.357
-[2015.04.01-12.18.22:474][810]LogSelection:Warning: PIE object was selected: "StaticMeshActor /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.Wall1_2"
-[2015.04.01-12.18.31:481][602]LogSelection:Warning: PIE object was selected: "SleepBot_C /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.SleepBot_C_1"
-[2015.04.01-12.19.01:526][193]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_1.  OwnerComponent has BeginDestroyed flag
-[2015.04.01-12.19.01:527][193]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_1.  OwnerComponent has BeginDestroyed flag
-[2015.04.01-12.19.01:571][194]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001B0216C0
-[2015.04.01-12.19.05:427][346]LogSavePackage: Save=2004.347900ms
-[2015.04.01-12.19.05:427][346]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/FirstPersonExampleMapCFB1D95A4C50E35B178A6DBAAA159FD1.tmp' to 'D:/Builds/FirstPersonProject/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
-[2015.04.01-12.29.03:574][163]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 0.019
-[2015.04.01-12.29.03:660][163]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AIBots/SleepingAIBot/BTT_Sleep] ([1] browsable assets)...
-[2015.04.01-12.29.03:677][163]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/SleepingAIBot/BTT_Sleep]
-[2015.04.01-12.29.03:679][163]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/BTT_Sleep" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto1.uasset" SILENT=false AUTOSAVING=true
-[2015.04.01-12.29.03:819][163]LogSavePackage: Save=114.889259ms
-[2015.04.01-12.29.03:820][163]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTT_Sleep_Auto15050937B46072C2F00467CA87E35B71A.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto1.uasset'
-[2015.04.01-12.29.03:825][163]LogFileHelpers: Auto-saving content packages took 0.250
-[2015.04.01-13.14.51:182][204]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
-[2015.04.01-13.17.40:066][169]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor2)
-[2015.04.01-13.20.22:619][621]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.04.01-13.20.24:473][621]LogSavePackage: Save=1794.175659ms
-[2015.04.01-13.20.24:473][621]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/FirstPersonExampleMap16E503BF4E38B9DC2758A485CA234EE6.tmp' to 'D:/Builds/FirstPersonProject/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
-[2015.04.01-13.20.33:671][452]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/BTT_Sleep" FILE="D:/Builds/FirstPersonProject/Content/AIBots/SleepingAIBot/BTT_Sleep.uasset" SILENT=true
-[2015.04.01-13.20.33:693][452]LogSavePackage: Save=16.665636ms
-[2015.04.01-13.20.33:693][452]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTT_Sleep9AB728D842C1BA98D8D092AF1D21C2FE.tmp' to 'D:/Builds/FirstPersonProject/Content/AIBots/SleepingAIBot/BTT_Sleep.uasset'
-[2015.04.01-13.20.34:147][453]Cmd: QUIT_EDITOR
-[2015.04.01-13.20.34:361][453]LogExit: Preparing to exit.
-[2015.04.01-13.20.35:098][453]LogExit: Editor shut down
-[2015.04.01-13.20.35:099][453]LogExit: Transaction tracking system shut down
-[2015.04.01-13.20.35:100][453]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000327C27A0
-[2015.04.01-13.20.35:100][453]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000327C2AC0
-[2015.04.01-13.20.35:103][453]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000018F95580
-[2015.04.01-13.20.35:104][453]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000028F33A60
-[2015.04.01-13.20.35:104][453]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000028E71260
-[2015.04.01-13.20.35:274][453]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000D617060
-[2015.04.01-13.20.35:274][453]LogExit: Object subsystem successfully closed.
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module CrashTracker (177)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module SuperSearch (176)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module SceneOutliner (175)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module EditorWidgets (174)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module CollectionManager (173)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module StatsViewer (172)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module FoliageEdit (171)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module LandscapeEditor (170)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module MeshPaint (169)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module ActorPickerMode (168)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module GeometryMode (167)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module TextureAlignMode (166)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module BspMode (165)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module PlacementMode (164)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module AutomationWorker (163)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module CharacterAI (162)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module SmartSnapping (161)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module ViewportSnapping (160)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module LogVisualizer (159)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (158)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module IntroTutorials (157)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (156)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module HardwareTargeting (155)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (154)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module UndoHistory (153)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (152)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module UserFeedback (151)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module XmlParser (150)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module Blutility (149)
-[2015.04.01-13.20.35:322][453]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (148)
-[2015.04.01-13.20.35:323][453]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (147)
-[2015.04.01-13.20.35:323][453]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (146)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (145)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (144)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (143)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (142)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module InputBindingEditor (141)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (140)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module SettingsEditor (139)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module ProjectLauncher (138)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module SessionFrontend (137)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module ProfilerClient (136)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (135)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module DeviceManager (134)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module AutomationController (133)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module AutomationWindow (132)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module Layers (131)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (130)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module DetailCustomizations (129)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module PackagesDialog (128)
-[2015.04.01-13.20.35:889][453]LogModuleManager: Shutting down and abandoning module AssetRegistry (127)
-[2015.04.01-13.20.36:447][453]LogFileManager:Warning: DeleteFile was unable to delete 'D:/Builds/FirstPersonProject/Intermediate/CachedAssetRegistry.bin', retrying in .5s...
-[2015.04.01-13.20.36:447][453]LogFileManager:Error: Error deleting file 'D:/Builds/FirstPersonProject/Intermediate/CachedAssetRegistry.bin'.
-[2015.04.01-13.20.36:447][453]LogModuleManager: Shutting down and abandoning module Persona (126)
-[2015.04.01-13.20.36:447][453]LogModuleManager: Shutting down and abandoning module SlateReflector (125)
-[2015.04.01-13.20.36:448][453]LogModuleManager: Shutting down and abandoning module LevelEditor (124)
-[2015.04.01-13.20.36:448][453]LogModuleManager: Shutting down and abandoning module Kismet (123)
-[2015.04.01-13.20.36:448][453]LogModuleManager: Shutting down and abandoning module GraphEditor (122)
-[2015.04.01-13.20.36:448][453]LogModuleManager: Shutting down and abandoning module ClassViewer (121)
-[2015.04.01-13.20.36:448][453]LogModuleManager: Shutting down and abandoning module Toolbox (120)
-[2015.04.01-13.20.36:448][453]LogModuleManager: Shutting down and abandoning module ModuleUI (119)
-[2015.04.01-13.20.36:448][453]LogModuleManager: Shutting down and abandoning module MovieSceneTools (118)
-[2015.04.01-13.20.36:448][453]LogModuleManager: Shutting down and abandoning module OutputLog (117)
-[2015.04.01-13.20.36:448][453]LogModuleManager: Shutting down and abandoning module GammaUI (116)
-[2015.04.01-13.20.36:448][453]LogModuleManager: Shutting down and abandoning module Documentation (115)
-[2015.04.01-13.20.36:448][453]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (114)
-[2015.04.01-13.20.36:449][453]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (113)
-[2015.04.01-13.20.36:449][453]LogModuleManager: Shutting down and abandoning module HTTP (112)
-[2015.04.01-13.20.36:449][453]LogModuleManager: Shutting down and abandoning module AnalyticsET (111)
-[2015.04.01-13.20.36:449][453]LogModuleManager: Shutting down and abandoning module Analytics (110)
-[2015.04.01-13.20.36:449][453]LogModuleManager: Shutting down and abandoning module AITestSuite (109)
-[2015.04.01-13.20.36:449][453]LogModuleManager: Shutting down and abandoning module GameplayDebugger (108)
-[2015.04.01-13.20.36:449][453]LogModuleManager: Shutting down and abandoning module AIModule (107)
-[2015.04.01-13.20.36:449][453]LogModuleManager: Shutting down and abandoning module ProfilerService (106)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module TaskGraph (105)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module SlateRemote (104)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module ScriptEditorPlugin (103)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (102)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module CableComponent (101)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module MessagingDebugger (100)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (99)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (98)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module PluginsEditor (97)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module MainFrame (96)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module EpicSurvey (95)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module DesktopPlatform (94)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (93)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module HotReload (92)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (91)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module UObjectPlugin (90)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (89)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (88)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module SourceControl (87)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module GitSourceControl (86)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module BlankPlugin (85)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (84)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module PaperJsonImporter (83)
-[2015.04.01-13.20.36:464][453]LogModuleManager: Shutting down and abandoning module ContentBrowser (82)
-[2015.04.01-13.20.36:465][453]LogModuleManager: Shutting down and abandoning module Paper2DEditor (81)
-[2015.04.01-13.20.36:465][453]LogModuleManager: Shutting down and abandoning module ScriptPlugin (80)
-[2015.04.01-13.20.36:465][453]LogModuleManager: Shutting down and abandoning module UdpMessaging (79)
-[2015.04.01-13.20.36:565][453]LogModuleManager: Shutting down and abandoning module Paper2D (78)
-[2015.04.01-13.20.36:565][453]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (77)
-[2015.04.01-13.20.36:567][453]LogModuleManager: Shutting down and abandoning module Media (76)
-[2015.04.01-13.20.36:567][453]LogModuleManager: Shutting down and abandoning module WmfMedia (75)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (74)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module PropertyEditor (73)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (72)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module FunctionalTesting (71)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (70)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (69)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module MessageLog (68)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module Sequencer (67)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module AssetTools (66)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module UMGEditor (65)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module UMG (64)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module Slate (63)
-[2015.04.01-13.20.36:568][453]LogModuleManager: Shutting down and abandoning module EditorStyle (62)
-[2015.04.01-13.20.36:572][453]LogModuleManager: Shutting down and abandoning module SessionServices (61)
-[2015.04.01-13.20.36:572][453]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (60)
-[2015.04.01-13.20.36:572][453]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (59)
-[2015.04.01-13.20.36:572][453]LogModuleManager: Shutting down and abandoning module XAudio2 (58)
-[2015.04.01-13.20.36:572][453]LogModuleManager: Shutting down and abandoning module Networking (56)
-[2015.04.01-13.20.36:572][453]LogModuleManager: Shutting down and abandoning module Core (55)
-[2015.04.01-13.20.36:572][453]LogModuleManager: Shutting down and abandoning module KismetCompiler (54)
-[2015.04.01-13.20.36:572][453]LogModuleManager: Shutting down and abandoning module PhysXFormats (53)
-[2015.04.01-13.20.36:572][453]LogModuleManager: Shutting down and abandoning module MeshUtilities (52)
-[2015.04.01-13.20.36:572][453]LogModuleManager: Shutting down and abandoning module DerivedDataCache (51)
-[2015.04.01-13.20.36:643][453]LogDerivedDataCache: Shutdown
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (50)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (49)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (48)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (47)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (46)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (45)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (44)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module ImageWrapper (43)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (42)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (41)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (40)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (39)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (38)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (37)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (36)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (35)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module Messaging (34)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (33)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (32)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (31)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (30)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (29)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module Android_ES31TargetPlatform (28)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (27)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (26)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (25)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (24)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (23)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (22)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (21)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module TargetPlatform (20)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module InputCore (19)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module Settings (18)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (16)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module OculusRift (15)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (14)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module TextureCompressor (13)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module ShaderCore (12)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module Landscape (11)
-[2015.04.01-13.20.36:643][453]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (10)
-[2015.04.01-13.20.36:645][453]LogModuleManager: Shutting down and abandoning module OpenGLDrv (9)
-[2015.04.01-13.20.36:645][453]LogModuleManager: Shutting down and abandoning module D3D11RHI (8)
-[2015.04.01-13.20.36:645][453]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2015.04.01-13.20.36:645][453]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2015.04.01-13.20.36:645][453]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2015.04.01-13.20.36:645][453]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2015.04.01-13.20.36:645][453]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2015.04.01-13.20.36:645][453]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2015.04.01-13.20.36:645][453]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2015.04.01-13.20.36:646][453]LogExit: Exiting.
-[2015.04.01-13.20.36:654][453]Log file closed, 04/01/15 16:20:36
+[2015.04.09-08.12.57:731][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.04.09-08.13.01:181][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.04.09-08.13.02:389][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.04.09-08.13.02:498][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.04.09-08.13.02:628][  0]LogDerivedDataCache: Loaded boot cache 0.13s 39MB C:/Users/tatu/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
+[2015.04.09-08.13.02:628][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/tatu/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc
+[2015.04.09-08.13.02:628][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Builds/FirstPersonProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.04.09-08.13.02:628][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.04.09-08.13.02:767][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2015.04.09-08.13.02:780][  0]LogDerivedDataCache: Using Local data cache path C:/Users/tatu/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2015.04.09-08.13.06:315][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.04.09-08.13.06:315][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.04.09-08.13.07:505][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.04.09-08.13.07:773][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf'
+[2015.04.09-08.13.20:471][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.04.09-08.13.21:032][  0]SourceControl: Info Source control is disabled
+[2015.04.09-08.13.21:032][  0]SourceControl: Info Source control is disabled
+[2015.04.09-08.13.21:032][  0]SourceControl: Info Source control is disabled
+[2015.04.09-08.13.21:032][  0]LogSourceControl: RunCommandInternalRaw: 'git version'
+[2015.04.09-08.13.21:033][  0]LogSourceControl: RunCommandInternalRaw: ExecProcess ReturnCode=2 OutResults=''
+[2015.04.09-08.13.21:048][  0]SourceControl: Info Source control is disabled
+[2015.04.09-08.13.21:592][  0]LogObj: 24232 objects as part of root set at end of initial load.
+[2015.04.09-08.13.21:592][  0]LogUObjectAllocator: 5137176 out of 0 bytes used by permanent object pool.
+[2015.04.09-08.13.21:831][  0]LogEngine: Initializing Engine...
+[2015.04.09-08.13.25:384][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.04.09-08.13.25:410][  0]LogInit: FAudioDevice initialized.
+[2015.04.09-08.13.25:490][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.04.09-08.13.25:523][  0]LogDerivedDataCache: Saved boot cache 0.03s 39MB C:/Users/tatu/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
+[2015.04.09-08.13.25:529][  0]LogInit: Texture streaming: Enabled
+[2015.04.09-08.13.26:140][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2015.04.09-08.13.26:140][  0]LogAnalytics: ET APIKey = Rocket.Release. APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.7.5-2503383+++depot+UE4-Releases+4.7
+[2015.04.09-08.13.26:140][  0]LogAnalytics: ET APIKey = Rocket.Release. DataRouterUploadURL = https://datarouter-public-service-gamedev.ol.epicgames.net/datarouter/api/v1/public/data. AppVersion = 4.7.5-2503383+++depot+UE4-Releases+4.7
+[2015.04.09-08.13.26:140][  0]LogAnalytics: SetUserId ed28b9a54144e66a2558d885e32da194|6804c67793284305bec8d08e6143faee|73e155b7-cb16-4ea6-b80c-c0e38ba520d3
+[2015.04.09-08.13.26:140][  0]LogAnalytics: AnalyticsET::StartSession [Rocket.Release]
+[2015.04.09-08.13.26:260][  0]LogInit: Transaction tracking system initialized
+[2015.04.09-08.13.27:378][  0]BlueprintLog: New page: Editor Load
+[2015.04.09-08.13.27:452][  0]LogAssetRegistry: FAssetRegistry took 0.0102 seconds to start up
+[2015.04.09-08.13.27:453][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for ../../../Engine/Plugins/Experimental/CharacterAI/Content/. Error: 0
+[2015.04.09-08.13.29:106][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.04.09-08.13.29:603][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.04.09-08.13.30:627][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Regular.ttf'
+[2015.04.09-08.13.30:628][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Bold.ttf'
+[2015.04.09-08.13.30:682][  0]LogConsoleResponse:Display: 
+[2015.04.09-08.13.31:622][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2015.04.09-08.13.32:292][  0]SourceControl: Info Source control is disabled
+[2015.04.09-08.13.32:292][  0]Cmd: MAP LOAD FILE="D:/Builds/FirstPersonProject/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.04.09-08.13.32:340][  0]LightingResults: New page: Lighting Build
+[2015.04.09-08.13.32:358][  0]MapCheck: New page: Map Check
+[2015.04.09-08.13.32:358][  0]LightingResults: New page: Lighting Build
+[2015.04.09-08.13.32:365][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000013CF2520
+[2015.04.09-08.13.32:916][  0]LogLinker:Warning: Asset '../../../Engine/Content/EngineMeshes/Humanoid.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.04.09-08.13.36:148][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.04.09-08.13.36:149][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-08.13.36:150][  0]Cmd: MAP CHECKDEP
+[2015.04.09-08.13.36:150][  0]MapCheck: New page: FirstPersonExampleMap - Apr 9, 2015, 2:13:36 PM
+[2015.04.09-08.13.36:284][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 134.58ms to complete.
+[2015.04.09-08.13.36:284][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 3.993
+[2015.04.09-08.13.36:499][  0]LogCollectionManager: Loaded 0 collections in 0.002886 seconds
+[2015.04.09-08.13.36:507][  0]LogContentBrowser: Native class hierarchy populated in 0.0077 seconds. Added 1696 classes and 261 folders.
+[2015.04.09-08.13.36:600][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0016 seconds. Added 1 classes and 2 folders.
+[2015.04.09-08.13.36:833][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2015.04.09-08.13.36:834][  0]LogSlate:Warning: Failed to load font data from 'Veranda'
+[2015.04.09-08.13.36:841][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2015.04.09-08.13.36:881][  0]LogLoad: Full Startup: 43.85 seconds (BP compile: 1.18 seconds)
+[2015.04.09-08.13.37:239][  0]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/AIBots/SleepingAIBot'
+[2015.04.09-08.13.37:368][  0]LogRenderer:Warning: Reallocating scene render targets to support 32x32 (Frame:2).
+[2015.04.09-08.13.37:603][  0]LogRenderer:Warning: Reallocating scene render targets to support 1208x576 (Frame:4).
+[2015.04.09-08.13.39:035][  5]LogAssetRegistry: Asset discovery search completed in 11.5932 seconds
+[2015.04.09-09.31.01:292][715]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-09.31.01:292][715]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_0) Not registered. Aborting.
+[2015.04.09-09.31.01:337][715]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 0.045
+[2015.04.09-09.31.01:374][715]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AIBots/SleepingAIBot/BTT_Sleep] ([1] browsable assets)...
+[2015.04.09-09.31.01:396][715]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/SleepingAIBot/BTT_Sleep]
+[2015.04.09-09.31.01:398][715]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/BTT_Sleep" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-09.31.01:566][715]LogSavePackage: Save=104.066330ms
+[2015.04.09-09.31.01:567][715]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTT_Sleep_Auto1CA118C9C464AB0FBBA411A9A43164189.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto1.uasset'
+[2015.04.09-09.31.01:592][715]LogFileHelpers: Auto-saving content packages took 0.256
+[2015.04.09-09.37.25:886][592]BlueprintLog: New page: Compile BTT_Sleep
+[2015.04.09-09.37.25:953][592]BlueprintEditorCompileResults: Info [5072.87] Compile of BTT_Sleep successful! [in 66 ms]
+[2015.04.09-09.38.31:175][ 41]BlueprintLog: New page: Compile BTT_Sleep
+[2015.04.09-09.38.31:241][ 41]BlueprintEditorCompileResults: Info [5138.16] Compile of BTT_Sleep successful! [in 66 ms]
+[2015.04.09-09.38.56:347][243]BlueprintLog: New page: Compile BTT_Sleep
+[2015.04.09-09.38.56:414][243]BlueprintEditorCompileResults: Info [5163.33] Compile of BTT_Sleep successful! [in 66 ms]
+[2015.04.09-09.41.02:105][103]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-09.41.02:128][103]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 0.023
+[2015.04.09-09.41.02:164][103]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AIBots/SleepingAIBot/SleepBotTree] ([1] browsable assets)...
+[2015.04.09-09.41.02:191][103]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/SleepingAIBot/SleepBotTree]
+[2015.04.09-09.41.02:193][103]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/SleepBotTree" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/SleepBotTree_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-09.41.02:295][103]LogSavePackage: Save=88.139908ms
+[2015.04.09-09.41.02:296][103]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/SleepBotTree_Auto20C15CFCA47E2B10D6060008A7F47E2F9.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/SleepBotTree_Auto2.uasset'
+[2015.04.09-09.41.02:347][103]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AIBots/SleepingAIBot/BTT_Sleep] ([1] browsable assets)...
+[2015.04.09-09.41.02:347][103]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/SleepingAIBot/BTT_Sleep]
+[2015.04.09-09.41.02:369][103]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/BTT_Sleep" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-09.41.02:472][103]LogSavePackage: Save=97.175903ms
+[2015.04.09-09.41.02:472][103]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTT_Sleep_Auto2B859784A4FB2FE51220015A9F246DC82.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto2.uasset'
+[2015.04.09-09.41.02:488][103]LogFileHelpers: Auto-saving content packages took 0.360
+[2015.04.09-09.44.39:267][978]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-09.44.39:268][978]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-09.44.39:268][978]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-09.44.39:269][978]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2945.EdGraphPin_20385''
+[2015.04.09-09.44.39:271][978]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2945.EdGraphPin_20384''
+[2015.04.09-09.46.02:910][764]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-09.46.25:291][423]BlueprintLog: New page: Compile BTT_Sleep
+[2015.04.09-09.46.25:359][423]BlueprintEditorCompileResults: Info [5612.27] Compile of BTT_Sleep successful! [in 67 ms]
+[2015.04.09-09.46.33:290][332]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-09.46.33:290][332]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 3:46:33 PM)
+[2015.04.09-09.46.33:323][332]LogPlayLevel: PIE: StaticDuplicateObject took: (0.032741s)
+[2015.04.09-09.46.33:324][332]LogPlayLevel: PIE: World Init took: (0.000937s)
+[2015.04.09-09.46.33:324][332]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.033959s)
+[2015.04.09-09.46.33:561][332]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-09.46.33:563][332]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-09.46.33:571][332]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-09.46.33:571][332]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-12.46.33
+[2015.04.09-09.46.33:574][332]LogWorld: Bringing up level for play took: 0.010528
+[2015.04.09-09.46.33:575][332]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.263
+[2015.04.09-09.48.23:432][556]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_0.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-09.48.23:432][556]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_0.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-09.48.23:436][556]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000033FF1EE0
+[2015.04.09-09.48.28:094][743]LogSavePackage: Save=2781.772705ms
+[2015.04.09-09.48.28:094][743]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/FirstPersonExampleMap6CB565454823321E4EDAF1B51A3F7224.tmp' to 'D:/Builds/FirstPersonProject/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2015.04.09-09.48.33:354][304]LogRenderer:Warning: Reallocating scene render targets to support 1208x904 (Frame:79749).
+[2015.04.09-09.49.15:677][933]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-09.51.23:274][668]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.51.23:312][668]LogActorComponent: UnregisterComponent: (/Engine/Transient.SkeletalMeshComponent_1) Not registered. Aborting.
+[2015.04.09-09.51.23:346][668]LogActorComponent: UnregisterComponent: (/Engine/Transient.SkeletalMeshComponent_1) Not registered. Aborting.
+[2015.04.09-09.51.23:346][668]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.MaterialEditorMeshComponent_0) Already registered. Aborting.
+[2015.04.09-09.51.23:348][668]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.51.23:353][668]LogMaterial: 0.000092 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.51.25:703][901]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.51.25:703][901]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.51.25:703][901]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.52.07:987][670]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.52.07:991][670]LogMaterial: 0.000059 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.52.10:042][864]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.52.10:042][864]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.52.10:042][864]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.52.10:926][969]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.52.10:931][969]LogMaterial: 0.000086 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.52.11:829][ 40]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.52.11:829][ 40]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.52.11:829][ 40]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.52.29:926][199]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.52.29:931][199]LogMaterial: 0.000084 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.52.30:688][275]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.52.30:688][275]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.52.30:688][275]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.52.34:139][688]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.52.34:143][688]LogMaterial: 0.000061 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.52.34:806][742]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.52.34:806][742]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.52.34:806][742]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.52.44:735][897]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.52.44:739][897]LogMaterial: 0.000071 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.52.44:741][897]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.52.44:746][897]LogMaterial: 0.000038 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.52.45:463][961]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.52.45:463][961]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.52.45:463][961]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.52.49:803][473]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.52.49:808][473]LogMaterial: 0.000064 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.52.50:662][551]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.52.50:662][551]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.52.50:662][551]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.52.52:576][766]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.52.52:581][766]LogMaterial: 0.000061 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.52.53:303][831]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.52.53:303][831]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.52.53:303][831]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.53.34:109][745]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.53.34:113][745]LogMaterial: 0.000076 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.53.35:403][873]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.53.35:403][873]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.53.35:403][873]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.53.39:860][397]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.53.39:864][397]LogMaterial: 0.000057 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.53.40:561][470]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.53.40:561][470]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.53.40:561][470]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.53.42:364][685]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.53.42:369][685]LogMaterial: 0.000068 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.53.43:079][761]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.53.43:079][761]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.53.43:079][761]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.53.57:046][432]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.53.57:051][432]LogMaterial: 0.000059 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.53.57:862][510]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.53.57:862][510]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.53.57:862][510]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.53.59:345][687]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.53.59:350][687]LogMaterial: 0.000081 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.54.00:087][752]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.54.00:087][752]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.54.00:087][752]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.55.02:612][230]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.55.02:617][230]LogMaterial: 0.000141 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.55.03:968][364]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.55.03:968][364]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.55.03:968][364]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.55.06:218][633]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.55.06:222][633]LogMaterial: 0.000098 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.55.06:906][693]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.55.06:906][693]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.55.06:906][693]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.55.13:622][491]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.55.13:626][491]LogMaterial: 0.000071 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.55.14:325][558]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.55.14:325][558]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.55.14:326][558]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.55.16:576][822]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.55.16:577][822]LogMaterial:Warning: Failed to compile Material /Engine/Transient.EyeMat for platform PCD3D_SM5, Default Material will be used in game.
+[2015.04.09-09.55.16:577][822]LogMaterial:Warning: 	(Node Desaturation) Missing Desaturation input
+[2015.04.09-09.55.16:577][822]LogMaterial: 0.000076 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.55.16:578][822]MaterialEditorStats:Error: Error [SM5] (Node Desaturation) Missing Desaturation input
+[2015.04.09-09.55.21:127][365]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.55.21:131][365]LogMaterial: 0.000039 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.55.21:800][421]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.55.21:800][421]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.55.21:800][421]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.55.31:343][563]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.55.31:347][563]LogMaterial: 0.000066 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.55.32:014][624]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.55.32:014][624]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.55.32:014][624]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.55.34:577][925]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.55.34:582][925]LogMaterial: 0.000099 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.55.35:231][982]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.55.35:231][982]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.55.35:231][982]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.55.36:044][ 79]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant_0, compiling. 
+[2015.04.09-09.55.45:642][219]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.55.45:647][219]LogMaterial: 0.000075 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.55.46:343][284]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.55.46:343][284]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.55.46:343][284]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.55.51:850][943]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.55.51:854][943]LogMaterial: 0.000074 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.55.52:687][ 11]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.55.52:687][ 11]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.55.52:687][ 11]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.55.52:842][ 29]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant2Vector_0, compiling. 
+[2015.04.09-09.56.06:376][609]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.56.06:380][609]LogMaterial: 0.000098 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.56.07:115][672]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.56.07:115][672]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.56.07:115][672]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.56.09:981][  6]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.56.09:986][  6]LogMaterial: 0.000080 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.56.09:986][  6]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2015.04.09-09.56.10:688][ 73]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.56.10:688][ 73]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.56.10:688][ 73]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.56.11:729][186]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.56.11:734][186]LogMaterial: 0.000077 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.56.11:764][186]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2015.04.09-09.56.12:540][261]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.56.12:540][261]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.56.12:540][261]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.56.26:980][980]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.56.26:985][980]LogMaterial: 0.000084 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.56.27:011][980]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2015.04.09-09.56.27:689][ 35]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-09.56.27:689][ 35]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.56.27:689][ 35]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-09.56.33:678][750]LogMaterialEditor: Saving and Compiling material EyeMat
+[2015.04.09-09.56.35:105][750]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.56.35:123][750]LogMaterial: 0.000072 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.56.35:181][750]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.56.35:196][750]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-09.56.35:212][750]LogMaterial: 0.009961 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-09.56.36:579][750]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/EyeMat" FILE="D:/Builds/FirstPersonProject/Content/EyeMat.uasset" SILENT=true
+[2015.04.09-09.56.36:796][750]LogSavePackage: Save=215.246506ms
+[2015.04.09-09.56.36:796][750]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/EyeMat5FBF94C54565A3D9AEBB0FAEDE267508.tmp' to 'D:/Builds/FirstPersonProject/Content/EyeMat.uasset'
+[2015.04.09-09.56.36:807][750]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 58 instructions
+[2015.04.09-09.56.36:807][750]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-09.56.36:807][750]MaterialEditorStats: Info Texture samplers: 3/16
+[2015.04.09-09.57.16:534][842]BlueprintLog: New page: Compile SleepBot
+[2015.04.09-09.57.16:634][842]BlueprintEditorCompileResults: Info [6263.54] Compile of SleepBot successful! [in 100 ms]
+[2015.04.09-09.57.23:256][546]BlueprintLog: New page: Pre-PIE auto-recompile
+[2015.04.09-09.57.23:259][546]LogPlayLevel: [PIE] Compiling BTS_DetectSound before PIE...
+[2015.04.09-09.57.23:343][546]LogPlayLevel: [PIE] Compiling BTT_Sleep before PIE...
+[2015.04.09-09.57.23:394][546]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-09.57.23:418][546]LogPlayLevel: PIE:  Blueprint regeneration took 161 ms (2 blueprints)
+[2015.04.09-09.57.23:418][546]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 3:57:23 PM)
+[2015.04.09-09.57.23:449][546]LogPlayLevel: PIE: StaticDuplicateObject took: (0.030530s)
+[2015.04.09-09.57.23:450][546]LogPlayLevel: PIE: World Init took: (0.001059s)
+[2015.04.09-09.57.23:450][546]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.031898s)
+[2015.04.09-09.57.23:492][546]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-09.57.23:493][546]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-09.57.23:502][546]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-09.57.23:502][546]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-12.57.23
+[2015.04.09-09.57.23:505][546]LogWorld: Bringing up level for play took: 0.010792
+[2015.04.09-09.57.23:506][546]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.187
+[2015.04.09-09.57.42:186][754]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_1.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-09.57.42:186][754]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_1.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-09.57.42:211][755]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000031288B80
+[2015.04.09-09.57.47:940][427]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/AIBots/PatrolAIBot'
+[2015.04.09-09.58.06:049][398]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-09.58.06:049][398]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_1) Not registered. Aborting.
+[2015.04.09-09.59.00:928][222]LogSavePackage: Save=1839.934326ms
+[2015.04.09-09.59.00:928][222]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/FirstPersonExampleMap_Auto3831D41BF46533DED84BDA0B514EB0BA5.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto3.umap'
+[2015.04.09-09.59.00:941][222]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 1.979
+[2015.04.09-09.59.00:941][222]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.979
+[2015.04.09-09.59.00:971][222]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AIBots/PatrolAIBot/botCharacter] ([1] browsable assets)...
+[2015.04.09-09.59.01:008][222]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/AIBots/PatrolAIBot/botCharacter.botCharacter]
+[2015.04.09-09.59.01:008][222]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/PatrolAIBot/botCharacter]
+[2015.04.09-09.59.01:019][222]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/PatrolAIBot/botCharacter" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/PatrolAIBot/botCharacter_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-09.59.01:352][222]LogSavePackage: Save=326.192749ms
+[2015.04.09-09.59.01:353][222]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/botCharacter_Auto37D84A8F44AA1EAEF5BF681AF7E086CFD.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/PatrolAIBot/botCharacter_Auto3.uasset'
+[2015.04.09-09.59.01:399][222]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AIBots/SleepingAIBot/SleepBot] ([1] browsable assets)...
+[2015.04.09-09.59.01:412][222]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/AIBots/SleepingAIBot/SleepBot.SleepBot]
+[2015.04.09-09.59.01:412][222]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/SleepingAIBot/SleepBot]
+[2015.04.09-09.59.01:414][222]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/SleepBot" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/SleepBot_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-09.59.01:810][222]LogSavePackage: Save=390.367798ms
+[2015.04.09-09.59.01:811][222]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/SleepBot_Auto390DCF0C44939226E440A52A838C350BB.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/SleepBot_Auto3.uasset'
+[2015.04.09-09.59.01:845][222]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AIBots/SleepingAIBot/BTT_Sleep] ([1] browsable assets)...
+[2015.04.09-09.59.01:845][222]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/SleepingAIBot/BTT_Sleep]
+[2015.04.09-09.59.01:854][222]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/BTT_Sleep" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-09.59.02:013][222]LogSavePackage: Save=148.925598ms
+[2015.04.09-09.59.02:014][222]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTT_Sleep_Auto331B74BC14465043DDA440FB3397E4BA3.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto3.uasset'
+[2015.04.09-09.59.02:029][222]LogFileHelpers: Auto-saving content packages took 1.088
+[2015.04.09-09.59.17:508][878]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-09.59.17:508][878]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_2) Not registered. Aborting.
+[2015.04.09-09.59.39:534][ 31]BlueprintLog: New page: Compile botCharacter
+[2015.04.09-09.59.39:651][ 31]BlueprintEditorCompileResults: Info [6406.55] Compile of botCharacter successful! [in 116 ms]
+[2015.04.09-10.00.52:965][602]BlueprintLog: New page: Pre-PIE auto-recompile
+[2015.04.09-10.00.52:970][602]LogPlayLevel: [PIE] Compiling BTS_botDetectEnemy before PIE...
+[2015.04.09-10.00.53:071][602]LogPlayLevel: [PIE] Compiling BTT_botAttackEnemy before PIE...
+[2015.04.09-10.00.53:136][602]LogPlayLevel: [PIE] Compiling BTT_botNextRoute before PIE...
+[2015.04.09-10.00.53:202][602]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.00.53:228][602]LogPlayLevel: PIE:  Blueprint regeneration took 262 ms (3 blueprints)
+[2015.04.09-10.00.53:228][602]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:00:53 PM)
+[2015.04.09-10.00.53:261][602]LogPlayLevel: PIE: StaticDuplicateObject took: (0.032347s)
+[2015.04.09-10.00.53:262][602]LogPlayLevel: PIE: World Init took: (0.000948s)
+[2015.04.09-10.00.53:263][602]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.033583s)
+[2015.04.09-10.00.53:302][602]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.00.53:303][602]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.00.53:312][602]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.00.53:312][602]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.00.53
+[2015.04.09-10.00.53:315][602]LogWorld: Bringing up level for play took: 0.011000
+[2015.04.09-10.00.53:316][602]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.006
+[2015.04.09-10.01.34:531][445]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_2.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.01.34:531][445]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_2.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.01.34:554][446]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000056FD4400
+[2015.04.09-10.06.14:571][467]BlueprintLog: New page: Compile BTS_botDetectEnemy
+[2015.04.09-10.06.14:659][467]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.06.14:688][467]BlueprintEditorCompileResults: Info [6801.58] Compile of BTS_botDetectEnemy successful! [in 116 ms]
+[2015.04.09-10.06.17:809][837]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-10.06.17:809][837]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:06:17 PM)
+[2015.04.09-10.06.17:839][837]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029380s)
+[2015.04.09-10.06.17:840][837]LogPlayLevel: PIE: World Init took: (0.000872s)
+[2015.04.09-10.06.17:840][837]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.030521s)
+[2015.04.09-10.06.17:884][837]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.06.17:886][837]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.06.17:895][837]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.06.17:895][837]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.06.17
+[2015.04.09-10.06.17:898][837]LogWorld: Bringing up level for play took: 0.011534
+[2015.04.09-10.06.17:920][837]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.596
+[2015.04.09-10.06.42:718][229]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.42:729][230]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:882][343]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:892][344]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:903][345]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:913][346]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:923][347]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:933][348]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:943][349]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:953][350]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:964][351]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:974][352]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:984][353]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.43:995][354]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.44:005][355]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.44:015][356]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.44:025][357]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.44:035][358]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.44:045][359]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.06.44:055][360]LogCharacterMovement: FirstPersonCharacter_C_2 is stuck and failed to move!
+[2015.04.09-10.07.06:864][531]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_3.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.07.06:864][531]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_3.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.07.06:883][532]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000056B84B80
+[2015.04.09-10.07.20:508][141]BlueprintLog: New page: Compile BTS_botDetectEnemy
+[2015.04.09-10.07.20:624][141]BlueprintEditorCompileResults: Info [6867.52] Compile of BTS_botDetectEnemy successful! [in 115 ms]
+[2015.04.09-10.07.25:749][745]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-10.07.25:749][745]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:07:25 PM)
+[2015.04.09-10.07.25:772][745]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022479s)
+[2015.04.09-10.07.25:773][745]LogPlayLevel: PIE: World Init took: (0.000967s)
+[2015.04.09-10.07.25:773][745]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.023719s)
+[2015.04.09-10.07.25:814][745]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.07.25:816][745]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.07.25:829][745]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.07.25:830][745]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.07.25
+[2015.04.09-10.07.25:835][745]LogWorld: Bringing up level for play took: 0.019269
+[2015.04.09-10.07.25:870][745]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.544
+[2015.04.09-10.07.34:709][584]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_4.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.07.34:709][584]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_4.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.07.34:728][585]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001C655EE0
+[2015.04.09-10.07.40:784][307]BlueprintLog: New page: Compile BTS_botDetectEnemy
+[2015.04.09-10.07.40:900][307]BlueprintEditorCompileResults: Info [6887.80] Compile of BTS_botDetectEnemy successful! [in 115 ms]
+[2015.04.09-10.07.42:009][437]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-10.07.42:010][437]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:07:42 PM)
+[2015.04.09-10.07.42:035][437]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024679s)
+[2015.04.09-10.07.42:036][437]LogPlayLevel: PIE: World Init took: (0.000982s)
+[2015.04.09-10.07.42:036][437]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.025939s)
+[2015.04.09-10.07.42:078][437]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.07.42:080][437]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.07.42:088][437]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.07.42:089][437]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.07.42
+[2015.04.09-10.07.42:092][437]LogWorld: Bringing up level for play took: 0.011385
+[2015.04.09-10.07.42:118][437]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.793
+[2015.04.09-10.07.50:564][237]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_5.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.07.50:564][237]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_5.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.07.50:582][238]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000005E306020
+[2015.04.09-10.08.01:307][520]BlueprintLog: New page: Compile BTS_botDetectEnemy
+[2015.04.09-10.08.01:423][520]BlueprintEditorCompileResults: Info [6908.32] Compile of BTS_botDetectEnemy successful! [in 115 ms]
+[2015.04.09-10.08.02:859][687]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-10.08.02:860][687]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:08:02 PM)
+[2015.04.09-10.08.02:885][687]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025524s)
+[2015.04.09-10.08.02:886][687]LogPlayLevel: PIE: World Init took: (0.000836s)
+[2015.04.09-10.08.02:887][687]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.026641s)
+[2015.04.09-10.08.02:926][687]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.08.02:928][687]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.08.02:936][687]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.08.02:936][687]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.08.02
+[2015.04.09-10.08.02:939][687]LogWorld: Bringing up level for play took: 0.011000
+[2015.04.09-10.08.02:964][687]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.361
+[2015.04.09-10.08.12:451][599]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_6.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.08.12:451][599]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_6.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.08.12:471][600]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000272C9EE0
+[2015.04.09-10.08.35:101][295]BlueprintLog: New page: Compile BTS_botDetectEnemy
+[2015.04.09-10.08.35:218][295]BlueprintEditorCompileResults: Info [6942.11] Compile of BTS_botDetectEnemy successful! [in 116 ms]
+[2015.04.09-10.08.38:727][476]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-10.08.38:727][476]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:08:38 PM)
+[2015.04.09-10.08.38:753][476]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025396s)
+[2015.04.09-10.08.38:754][476]LogPlayLevel: PIE: World Init took: (0.000891s)
+[2015.04.09-10.08.38:754][476]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.026573s)
+[2015.04.09-10.08.38:792][476]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.08.38:794][476]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.08.38:803][476]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.08.38:803][476]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.08.38
+[2015.04.09-10.08.38:806][476]LogWorld: Bringing up level for play took: 0.011208
+[2015.04.09-10.08.38:833][476]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.493
+[2015.04.09-10.08.45:535][111]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_7.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.08.45:535][111]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_7.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.08.45:554][112]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000056A07240
+[2015.04.09-10.08.52:384][926]BlueprintLog: New page: Compile BTS_botDetectEnemy
+[2015.04.09-10.08.52:506][926]BlueprintEditorCompileResults: Info [6959.40] Compile of BTS_botDetectEnemy successful! [in 122 ms]
+[2015.04.09-10.08.55:605][175]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-10.08.55:606][175]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:08:55 PM)
+[2015.04.09-10.08.55:628][175]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022040s)
+[2015.04.09-10.08.55:629][175]LogPlayLevel: PIE: World Init took: (0.000905s)
+[2015.04.09-10.08.55:629][175]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.023225s)
+[2015.04.09-10.08.55:679][175]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.08.55:682][175]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.08.55:700][175]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.08.55:700][175]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.08.55
+[2015.04.09-10.08.55:706][175]LogWorld: Bringing up level for play took: 0.022589
+[2015.04.09-10.08.55:750][175]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.424
+[2015.04.09-10.09.47:466][106]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_8.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.09.47:467][106]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_8.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.09.47:486][107]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001A319620
+[2015.04.09-10.10.08:935][672]BlueprintLog: New page: Compile BTS_botDetectEnemy
+[2015.04.09-10.10.09:053][672]BlueprintEditorCompileResults: Info [7035.95] Compile of BTS_botDetectEnemy successful! [in 117 ms]
+[2015.04.09-10.10.09:992][781]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-10.10.09:992][781]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:10:09 PM)
+[2015.04.09-10.10.10:016][781]LogPlayLevel: PIE: StaticDuplicateObject took: (0.023618s)
+[2015.04.09-10.10.10:017][781]LogPlayLevel: PIE: World Init took: (0.000945s)
+[2015.04.09-10.10.10:017][781]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.024827s)
+[2015.04.09-10.10.10:057][781]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.10.10:059][781]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.10.10:068][781]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.10.10:068][781]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.10.10
+[2015.04.09-10.10.10:071][781]LogWorld: Bringing up level for play took: 0.011242
+[2015.04.09-10.10.10:097][781]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.771
+[2015.04.09-10.10.19:336][661]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_9.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.10.19:336][661]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_9.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.10.19:354][662]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000056A88FE0
+[2015.04.09-10.10.25:668][416]BlueprintLog: New page: Compile BTS_botDetectEnemy
+[2015.04.09-10.10.25:787][416]BlueprintEditorCompileResults: Info [7052.68] Compile of BTS_botDetectEnemy successful! [in 119 ms]
+[2015.04.09-10.12.09:332][521]LogSavePackage: Save=1865.003296ms
+[2015.04.09-10.12.09:332][521]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/FirstPersonExampleMap_Auto48EE6928648FC3888A1F5FA91DBC61BFF.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto4.umap'
+[2015.04.09-10.12.09:339][521]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 1.993
+[2015.04.09-10.12.09:339][521]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.993
+[2015.04.09-10.12.09:375][521]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AIBots/PatrolAIBot/botCharacter] ([1] browsable assets)...
+[2015.04.09-10.12.09:402][521]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/AIBots/PatrolAIBot/botCharacter.botCharacter]
+[2015.04.09-10.12.09:402][521]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/PatrolAIBot/botCharacter]
+[2015.04.09-10.12.09:404][521]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/PatrolAIBot/botCharacter" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/PatrolAIBot/botCharacter_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-10.12.09:703][521]LogSavePackage: Save=293.487091ms
+[2015.04.09-10.12.09:704][521]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/botCharacter_Auto4CFA5F54648CE692E2E4280938F55B540.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/PatrolAIBot/botCharacter_Auto4.uasset'
+[2015.04.09-10.12.09:749][521]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AIBots/PatrolAIBot/BTS_botDetectEnemy] ([1] browsable assets)...
+[2015.04.09-10.12.09:749][521]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/PatrolAIBot/BTS_botDetectEnemy]
+[2015.04.09-10.12.10:014][521]LogSavePackage: Save=234.865280ms
+[2015.04.09-10.12.10:015][521]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTS_botDetectEnemy_Auto4EB06EA4D4E9788A22C980EBF261C417E.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/PatrolAIBot/BTS_botDetectEnemy_Auto4.uasset'
+[2015.04.09-10.12.10:020][521]LogFileHelpers: Auto-saving content packages took 0.680
+[2015.04.09-10.14.52:895][629]LogEditorViewport: Clicking on Actor (LMB): SleepBot_C (SleepBot)
+[2015.04.09-10.14.58:646][203]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2015.04.09-10.15.00:065][345]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2015.04.09-10.26.23:572][744]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.26.25:429][744]LogSavePackage: Save=1807.944458ms
+[2015.04.09-10.26.25:429][744]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/FirstPersonExampleMap1D8183E846BE9F2CD17A4FA66343B04A.tmp' to 'D:/Builds/FirstPersonProject/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2015.04.09-10.27.48:892][321]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/AIbotStuff'
+[2015.04.09-10.27.52:106][678]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/AIBots'
+[2015.04.09-10.27.54:107][894]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game'
+[2015.04.09-10.27.56:856][111]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/NewFolder'
+[2015.04.09-10.28.00:146][469]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Traps'
+[2015.04.09-10.28.18:126][112]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/Traps'
+[2015.04.09-10.28.24:417][787]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/Traps/PressureTrap
+[2015.04.09-10.28.42:079][618]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.29.24:996][260]BlueprintLog: New page: Compile PressureTrap
+[2015.04.09-10.29.25:096][260]BlueprintEditorCompileResults: Info [8191.98] Compile of PressureTrap successful! [in 99 ms]
+[2015.04.09-10.30.30:732][500]LogEditorTransaction: Undo Modify Component(s)
+[2015.04.09-10.30.30:795][500]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-10.30.30:799][500]LogMaterial: 0.000116 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-10.30.32:147][595]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-10.30.32:147][595]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-10.30.32:147][595]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-10.30.32:564][645]LogEditorTransaction: Undo Modify Component(s)
+[2015.04.09-10.30.32:597][645]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-10.30.32:602][645]LogMaterial: 0.000147 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-10.30.33:364][708]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-10.30.33:364][708]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-10.30.33:364][708]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-10.31.35:822][923]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.31.35:822][923]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_3) Not registered. Aborting.
+[2015.04.09-10.32.23:650][207]LogEditorTransaction: Undo Duplicate Component
+[2015.04.09-10.32.23:691][207]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-10.32.23:696][207]LogMaterial: 0.000059 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-10.32.24:817][255]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-10.32.24:817][255]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-10.32.24:817][255]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-10.32.38:728][798]LogEditorTransaction: Undo Modify Component(s)
+[2015.04.09-10.32.38:760][798]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-10.32.38:764][798]LogMaterial: 0.000269 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-10.32.39:367][811]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-10.32.39:367][811]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-10.32.39:367][811]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-10.36.28:460][522]LogSavePackage: Save=1808.023193ms
+[2015.04.09-10.36.28:460][522]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/FirstPersonExampleMap_Auto531FE9E1E4FA2F7803C6218B9D71759EE.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto5.umap'
+[2015.04.09-10.36.28:465][522]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 1.959
+[2015.04.09-10.36.28:465][522]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.959
+[2015.04.09-10.36.28:497][522]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AIBots/PatrolAIBot/botCharacter] ([1] browsable assets)...
+[2015.04.09-10.36.28:542][522]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/AIBots/PatrolAIBot/botCharacter.botCharacter]
+[2015.04.09-10.36.28:542][522]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/PatrolAIBot/botCharacter]
+[2015.04.09-10.36.28:544][522]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/PatrolAIBot/botCharacter" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/PatrolAIBot/botCharacter_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-10.36.28:860][522]LogSavePackage: Save=307.700958ms
+[2015.04.09-10.36.28:860][522]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/botCharacter_Auto57191445645B6F6B0DFE3E6BED3443792.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/PatrolAIBot/botCharacter_Auto5.uasset'
+[2015.04.09-10.36.28:896][522]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AIBots/PatrolAIBot/BTS_botDetectEnemy] ([1] browsable assets)...
+[2015.04.09-10.36.28:896][522]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/PatrolAIBot/BTS_botDetectEnemy]
+[2015.04.09-10.36.29:202][522]LogSavePackage: Save=257.816681ms
+[2015.04.09-10.36.29:203][522]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTS_botDetectEnemy_Auto53B0491C84A08B166EDA49F955FBD3258.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/PatrolAIBot/BTS_botDetectEnemy_Auto5.uasset'
+[2015.04.09-10.36.29:240][522]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AIBots/SleepingAIBot/SleepBot] ([1] browsable assets)...
+[2015.04.09-10.36.29:303][522]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/AIBots/SleepingAIBot/SleepBot.SleepBot]
+[2015.04.09-10.36.29:303][522]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/SleepingAIBot/SleepBot]
+[2015.04.09-10.36.29:305][522]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/SleepBot" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/SleepBot_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-10.36.29:696][522]LogSavePackage: Save=386.141235ms
+[2015.04.09-10.36.29:696][522]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/SleepBot_Auto583EE53304AC057D4E36A298B24288E18.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/SleepBot_Auto5.uasset'
+[2015.04.09-10.36.29:734][522]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AIBots/SleepingAIBot/BTT_Sleep] ([1] browsable assets)...
+[2015.04.09-10.36.29:734][522]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/SleepingAIBot/BTT_Sleep]
+[2015.04.09-10.36.29:756][522]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/BTT_Sleep" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-10.36.29:949][522]LogSavePackage: Save=182.954941ms
+[2015.04.09-10.36.29:950][522]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTT_Sleep_Auto5E460EE334822F6128668D69FE292A838.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto5.uasset'
+[2015.04.09-10.36.29:989][522]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Traps/PressureTrap] ([1] browsable assets)...
+[2015.04.09-10.36.30:031][522]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Traps/PressureTrap.PressureTrap]
+[2015.04.09-10.36.30:031][522]OBJ SavePackage: Finished generating thumbnails for package [/Game/Traps/PressureTrap]
+[2015.04.09-10.36.30:033][522]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Traps/PressureTrap" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/Traps/PressureTrap_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-10.36.30:239][522]LogSavePackage: Save=205.095551ms
+[2015.04.09-10.36.30:240][522]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/PressureTrap_Auto58E204D67473B002574219A9F91564C22.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/Traps/PressureTrap_Auto5.uasset'
+[2015.04.09-10.36.30:244][522]LogFileHelpers: Auto-saving content packages took 1.779
+[2015.04.09-10.36.52:181][ 44]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.36.52:181][ 44]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_4) Not registered. Aborting.
+[2015.04.09-10.37.20:155][355]BlueprintLog: New page: Compile PressureTrap
+[2015.04.09-10.37.20:217][355]BlueprintEditorCompileResults: Info [8667.09] Compile of PressureTrap successful! [in 61 ms]
+[2015.04.09-10.37.24:582][792]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.24:589][792]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.24:590][792]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.24:590][792]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.25:362][854]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.25:363][854]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.25:363][854]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.25:363][854]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.33:062][717]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor2)
+[2015.04.09-10.37.33:159][717]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.33:159][717]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.33:163][717]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.33:164][717]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.35:603][944]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor2)
+[2015.04.09-10.37.35:621][944]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.35:622][944]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.35:622][944]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.35:622][944]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.36:806][ 23]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall8)
+[2015.04.09-10.37.39:705][335]LogEditorViewport: Clicking on Actor (LMB): PressureTrap_C (PressureTrap)
+[2015.04.09-10.37.45:655][ 12]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor2)
+[2015.04.09-10.37.45:677][ 12]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.45:677][ 12]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.45:678][ 12]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.45:678][ 12]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.37.50:510][511]LogEditorViewport: Clicking on Actor (LMB): PressureTrap_C (PressureTrap)
+[2015.04.09-10.37.53:133][803]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor2)
+[2015.04.09-10.37.55:198][993]BlueprintLog: New page: Pre-PIE auto-recompile
+[2015.04.09-10.37.55:202][993]LogPlayLevel: [PIE] Compiling BTS_botDetectEnemy before PIE...
+[2015.04.09-10.37.55:297][993]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.37.55:297][993]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_5) Not registered. Aborting.
+[2015.04.09-10.37.55:302][993]LogPlayLevel: [PIE] Compiling botCharacter before PIE...
+[2015.04.09-10.37.55:385][993]LogPlayLevel: [PIE] Compiling SleepBot before PIE...
+[2015.04.09-10.37.55:477][993]LogPlayLevel: [PIE] Compiling BTT_Sleep before PIE...
+[2015.04.09-10.37.55:532][993]LogPlayLevel: [PIE] Compiling BTT_botAttackEnemy before PIE...
+[2015.04.09-10.37.55:595][993]LogPlayLevel: [PIE] Compiling BTT_botNextRoute before PIE...
+[2015.04.09-10.37.55:661][993]LogPlayLevel: [PIE] Compiling BTS_DetectSound before PIE...
+[2015.04.09-10.37.55:769][993]LogPlayLevel: PIE:  Blueprint regeneration took 570 ms (7 blueprints)
+[2015.04.09-10.37.55:769][993]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:37:55 PM)
+[2015.04.09-10.37.55:796][993]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026125s)
+[2015.04.09-10.37.55:797][993]LogPlayLevel: PIE: World Init took: (0.001545s)
+[2015.04.09-10.37.55:798][993]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.028106s)
+[2015.04.09-10.37.55:838][993]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.37.55:840][993]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.37.55:849][993]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.37.55:849][993]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.37.55
+[2015.04.09-10.37.55:851][993]LogWorld: Bringing up level for play took: 0.010834
+[2015.04.09-10.37.55:853][993]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.508
+[2015.04.09-10.38.05:266][ 99]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.38.05:266][ 99]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_6) Not registered. Aborting.
+[2015.04.09-10.38.05:282][ 99]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_10.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.38.05:283][ 99]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_10.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.38.05:319][100]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000058FBF600
+[2015.04.09-10.38.09:046][479]LogEditorViewport: Clicking on Actor (LMB): PressureTrap_C (PressureTrap)
+[2015.04.09-10.38.12:029][805]Cmd: TRANSACTION UNDO
+[2015.04.09-10.38.12:029][805]LogEditorTransaction: Undo Scale Actors
+[2015.04.09-10.38.12:061][805]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-10.38.12:065][805]LogMaterial: 0.000042 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-10.38.13:467][882]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-10.38.13:467][882]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-10.38.13:467][882]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-10.38.24:878][146]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor2)
+[2015.04.09-10.38.24:899][146]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.24:900][146]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.24:900][146]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.24:900][146]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.24:994][147]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor2)
+[2015.04.09-10.38.25:013][147]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.25:013][147]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.25:014][147]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.25:014][147]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.29:450][563]Cmd: TRANSACTION UNDO
+[2015.04.09-10.38.29:450][563]LogEditorTransaction: Undo Move Actors
+[2015.04.09-10.38.29:487][563]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.38.29:487][563]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_7) Not registered. Aborting.
+[2015.04.09-10.38.29:493][563]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-10.38.29:498][563]LogMaterial: 0.000110 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-10.38.30:172][574]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-10.38.30:172][574]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-10.38.30:172][574]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-10.38.30:731][624]LogEditorViewport: Clicking on Actor (LMB): PressureTrap_C (PressureTrap)
+[2015.04.09-10.38.37:951][358]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor2)
+[2015.04.09-10.38.37:977][358]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.37:977][358]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.37:978][358]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.37:978][358]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.41:048][663]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor2)
+[2015.04.09-10.38.41:067][663]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.41:067][663]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.41:068][663]LogLinker:Warning: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.41:068][663]LogLinker: Can't find file '/Game/Traps/PressureTrap'
+[2015.04.09-10.38.42:363][775]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor2)
+[2015.04.09-10.39.10:753][907]BlueprintLog: New page: Compile PressureTrap
+[2015.04.09-10.39.10:789][907]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_8) Not registered. Aborting.
+[2015.04.09-10.39.10:789][907]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_9) Not registered. Aborting.
+[2015.04.09-10.39.10:821][907]BlueprintEditorCompileResults: Info [8777.70] Compile of PressureTrap successful! [in 68 ms]
+[2015.04.09-10.41.36:207][925]BlueprintLog: New page: Compile PressureTrap
+[2015.04.09-10.41.36:285][925]BlueprintEditorCompileResults: Info [8923.16] Compile of PressureTrap successful! [in 77 ms]
+[2015.04.09-10.41.44:985][940]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/AIBots/SleepingAIBot'
+[2015.04.09-10.42.13:881][173]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-10.42.13:881][173]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-10.42.13:881][173]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-10.42.13:881][173]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-10.42.13:882][173]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-10.42.13:882][173]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-10.42.13:882][173]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-10.42.13:882][173]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-10.42.13:882][173]LogUObjectGlobals:Warning: Failed to find object 'Object None.'
+[2015.04.09-10.42.13:882][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CallFunction_4801 or K2Node_CallFunction /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CallFunction_4801
+[2015.04.09-10.42.13:882][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CallFunction_4801 or K2Node_CallFunction /Game/AIBots/PatrolAIBot/BTS_botDetectEnemy.BTS_botDetectEnemy:EventGraph.K2Node_CallFunction_4801
+[2015.04.09-10.42.13:883][173]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CallFunction_4801.EdGraphPin_6668) from referencer (EdGraphPin /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_VariableGet_1480.EdGraphPin_6825).  Import failed...
+[2015.04.09-10.42.13:883][173]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_4801.EdGraphPin_6668''
+[2015.04.09-10.42.13:884][173]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_IfThenElse_466.EdGraphPin_6911) from referencer (EdGraphPin /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_IfThenElse_653.EdGraphPin_6831).  Import failed...
+[2015.04.09-10.42.13:884][173]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_466.EdGraphPin_6911''
+[2015.04.09-10.42.13:884][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CallFunction_4801 or K2Node_CallFunction /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CallFunction_4801
+[2015.04.09-10.42.13:884][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CallFunction_4801 or K2Node_CallFunction /Game/AIBots/PatrolAIBot/BTS_botDetectEnemy.BTS_botDetectEnemy:EventGraph.K2Node_CallFunction_4801
+[2015.04.09-10.42.13:884][173]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CallFunction_4801.EdGraphPin_6670) from referencer (EdGraphPin /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_IfThenElse_653.EdGraphPin_6832).  Import failed...
+[2015.04.09-10.42.13:884][173]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_4801.EdGraphPin_6670''
+[2015.04.09-10.42.13:884][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_VariableSet_453 or K2Node_VariableSet /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_VariableSet_453
+[2015.04.09-10.42.13:884][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_VariableSet_453 or K2Node_VariableSet /Game/AIBots/PatrolAIBot/BTS_botDetectEnemy.BTS_botDetectEnemy:EventGraph.K2Node_VariableSet_453
+[2015.04.09-10.42.13:884][173]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_VariableSet_453.EdGraphPin_6849) from referencer (EdGraphPin /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_IfThenElse_653.EdGraphPin_6833).  Import failed...
+[2015.04.09-10.42.13:884][173]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableSet_453.EdGraphPin_6849''
+[2015.04.09-10.42.13:884][173]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CallFunction_6032.EdGraphPin_6972) from referencer (EdGraphPin /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_IfThenElse_653.EdGraphPin_6834).  Import failed...
+[2015.04.09-10.42.13:884][173]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_6032.EdGraphPin_6972''
+[2015.04.09-10.42.13:885][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableGet /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_VariableGet_1182 or K2Node_VariableGet /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_VariableGet_1182
+[2015.04.09-10.42.13:885][173]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_VariableGet_1182.EdGraphPin_6903) from referencer (EdGraphPin /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CallFunction_4801.EdGraphPin_6669).  Import failed...
+[2015.04.09-10.42.13:885][173]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableGet_1182.EdGraphPin_6903''
+[2015.04.09-10.42.13:887][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241 or K2Node_CommutativeAssociativeBinaryOperator /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241
+[2015.04.09-10.42.13:887][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241 or K2Node_CommutativeAssociativeBinaryOperator /Game/AIBots/PatrolAIBot/BTS_botDetectEnemy.BTS_botDetectEnemy:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241
+[2015.04.09-10.42.13:887][173]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241.EdGraphPin_6894) from referencer (EdGraphPin /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_VariableSet_453.EdGraphPin_6851).  Import failed...
+[2015.04.09-10.42.13:887][173]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_241.EdGraphPin_6894''
+[2015.04.09-10.42.13:888][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_240 or K2Node_CommutativeAssociativeBinaryOperator /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_240
+[2015.04.09-10.42.13:888][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_240 or K2Node_CommutativeAssociativeBinaryOperator /Game/AIBots/PatrolAIBot/BTS_botDetectEnemy.BTS_botDetectEnemy:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_240
+[2015.04.09-10.42.13:888][173]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_240.EdGraphPin_6875) from referencer (EdGraphPin /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CallFunction_4802.EdGraphPin_6866).  Import failed...
+[2015.04.09-10.42.13:888][173]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_240.EdGraphPin_6875''
+[2015.04.09-10.42.13:889][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241 or K2Node_CommutativeAssociativeBinaryOperator /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241
+[2015.04.09-10.42.13:889][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241 or K2Node_CommutativeAssociativeBinaryOperator /Game/AIBots/PatrolAIBot/BTS_botDetectEnemy.BTS_botDetectEnemy:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241
+[2015.04.09-10.42.13:889][173]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241.EdGraphPin_6892) from referencer (EdGraphPin /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_240.EdGraphPin_6876).  Import failed...
+[2015.04.09-10.42.13:889][173]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_241.EdGraphPin_6892''
+[2015.04.09-10.42.13:890][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241 or K2Node_CommutativeAssociativeBinaryOperator /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241
+[2015.04.09-10.42.13:890][173]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241 or K2Node_CommutativeAssociativeBinaryOperator /Game/AIBots/PatrolAIBot/BTS_botDetectEnemy.BTS_botDetectEnemy:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241
+[2015.04.09-10.42.13:890][173]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/AIBots/SleepingAIBot/BTS_DetectSound.BTS_DetectSound:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_241.EdGraphPin_6893) from referencer (EdGraphPin /Game/Traps/PressureTrap.PressureTrap:EventGraph.K2Node_VariableGet_1484.EdGraphPin_6885).  Import failed...
+[2015.04.09-10.42.13:890][173]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_241.EdGraphPin_6893''
+[2015.04.09-10.42.13:892][173]LogBlueprint:Warning: [PressureTrap] CreatePinForVariable: 'waitTime' variable not found. Base class was probably changed.
+[2015.04.09-10.42.13:894][173]LogBlueprint:Warning: [PressureTrap] CreatePinForVariable: 'waitTime' variable not found. Base class was probably changed.
+[2015.04.09-10.42.13:894][173]LogBlueprint:Warning: [PressureTrap] CreatePinForVariable: 'waitTime' variable not found. Base class was probably changed.
+[2015.04.09-10.42.13:896][173]LogBlueprint:Warning: [PressureTrap] CreatePinForVariable: 'waitTime' variable not found. Base class was probably changed.
+[2015.04.09-10.42.13:896][173]LogBlueprint:Warning: [PressureTrap] CreatePinForVariable: 'TimeOut' variable not found. Base class was probably changed.
+[2015.04.09-10.42.26:921][709]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.42.40:365][283]BlueprintLog: New page: Compile PressureTrap
+[2015.04.09-10.42.40:378][283]LogBlueprint:Warning: [compiler] Warning Could not find a variable named "waitTime" in 'PressureTrap_C'.
+Make sure 'PressureTrap_C' has been compiled for  Get waitTime 
+[2015.04.09-10.42.40:378][283]LogBlueprint:Warning: [compiler] Warning Could not find a variable named "waitTime" in 'PressureTrap_C'.
+Make sure 'PressureTrap_C' has been compiled for  Set waitTime 
+[2015.04.09-10.42.40:378][283]LogBlueprint:Warning: [compiler] Warning Could not find a variable named "waitTime" in 'PressureTrap_C'.
+Make sure 'PressureTrap_C' has been compiled for  Get waitTime 
+[2015.04.09-10.42.40:448][283]LogBlueprint:Warning: [compiler] Warning [8987.32] Compile of PressureTrap successful, but with 3 Warning(s) [in 83 ms]
+[2015.04.09-10.42.40:448][283]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "waitTime" in 'PressureTrap_C'.
+Make sure 'PressureTrap_C' has been compiled for  Get waitTime 
+[2015.04.09-10.42.40:448][283]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "waitTime" in 'PressureTrap_C'.
+Make sure 'PressureTrap_C' has been compiled for  Set waitTime 
+[2015.04.09-10.42.40:448][283]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "waitTime" in 'PressureTrap_C'.
+Make sure 'PressureTrap_C' has been compiled for  Get waitTime 
+[2015.04.09-10.42.40:448][283]BlueprintEditorCompileResults:Warning: Warning [8987.32] Compile of PressureTrap successful, but with 3 Warning(s) [in 83 ms]
+[2015.04.09-10.42.53:612][843]LogEditorTransaction: Undo Delete current selection
+[2015.04.09-10.42.53:654][843]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-10.42.53:658][843]LogMaterial: 0.000072 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-10.42.54:962][943]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 29 instructions
+[2015.04.09-10.42.54:962][943]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.04.09-10.42.54:962][943]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.04.09-10.46.29:692][593]BlueprintLog: New page: Compile PressureTrap
+[2015.04.09-10.46.29:778][593]BlueprintEditorCompileResults: Info [9216.65] Compile of PressureTrap successful! [in 85 ms]
+[2015.04.09-10.46.33:713][984]BlueprintLog: New page: Pre-PIE auto-recompile
+[2015.04.09-10.46.33:728][984]LogPlayLevel: [PIE] Compiling BTS_botDetectEnemy before PIE...
+[2015.04.09-10.46.33:826][984]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.46.33:826][984]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_10) Not registered. Aborting.
+[2015.04.09-10.46.33:831][984]LogPlayLevel: [PIE] Compiling botCharacter before PIE...
+[2015.04.09-10.46.33:920][984]LogPlayLevel: [PIE] Compiling SleepBot before PIE...
+[2015.04.09-10.46.34:000][984]LogPlayLevel: [PIE] Compiling BTS_DetectSound before PIE...
+[2015.04.09-10.46.34:084][984]LogPlayLevel: [PIE] Compiling BTT_Sleep before PIE...
+[2015.04.09-10.46.34:143][984]LogPlayLevel: [PIE] Compiling BTT_botAttackEnemy before PIE...
+[2015.04.09-10.46.34:209][984]LogPlayLevel: [PIE] Compiling BTT_botNextRoute before PIE...
+[2015.04.09-10.46.34:301][984]LogPlayLevel: PIE:  Blueprint regeneration took 588 ms (7 blueprints)
+[2015.04.09-10.46.34:302][984]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:46:34 PM)
+[2015.04.09-10.46.34:331][984]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028963s)
+[2015.04.09-10.46.34:332][984]LogPlayLevel: PIE: World Init took: (0.000857s)
+[2015.04.09-10.46.34:333][984]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.030092s)
+[2015.04.09-10.46.34:371][984]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.46.34:372][984]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.46.34:380][984]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.46.34:380][984]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.46.34
+[2015.04.09-10.46.34:383][984]LogWorld: Bringing up level for play took: 0.010390
+[2015.04.09-10.46.34:384][984]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 1.035
+[2015.04.09-10.47.36:900][587]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.47.36:900][587]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_11) Not registered. Aborting.
+[2015.04.09-10.47.38:059][696]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_11.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.47.38:060][696]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_11.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.47.38:062][696]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000006C035E40
+[2015.04.09-10.47.49:959][964]BlueprintLog: New page: Pre-PIE auto-recompile
+[2015.04.09-10.47.49:963][964]LogPlayLevel: [PIE] Compiling BTS_botDetectEnemy before PIE...
+[2015.04.09-10.47.50:082][964]LogPlayLevel: PIE:  Blueprint regeneration took 123 ms (1 blueprints)
+[2015.04.09-10.47.50:083][964]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:47:50 PM)
+[2015.04.09-10.47.50:109][964]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025778s)
+[2015.04.09-10.47.50:110][964]LogPlayLevel: PIE: World Init took: (0.000866s)
+[2015.04.09-10.47.50:110][964]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.026915s)
+[2015.04.09-10.47.50:150][964]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.47.50:152][964]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.47.50:161][964]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.47.50:161][964]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.47.50
+[2015.04.09-10.47.50:164][964]LogWorld: Bringing up level for play took: 0.011715
+[2015.04.09-10.47.50:179][964]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.829
+[2015.04.09-10.49.54:997][528]LogEditorViewport: Clicking on Actor (LMB): PressureTrap_C (PressureTrap)
+[2015.04.09-10.49.56:045][592]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor2)
+[2015.04.09-10.50.29:653][362]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_12.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.50.29:653][362]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_12.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.50.29:712][363]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000006B1BBEC0
+[2015.04.09-10.50.41:596][ 82]LogSavePackage: Save=1805.721436ms
+[2015.04.09-10.50.41:597][ 82]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/FirstPersonExampleMap_Auto62117404647957947326316A96B22DA5A.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto6.umap'
+[2015.04.09-10.50.41:625][ 82]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 1.949
+[2015.04.09-10.50.41:625][ 82]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.949
+[2015.04.09-10.50.41:656][ 82]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AIBots/PatrolAIBot/botCharacter] ([1] browsable assets)...
+[2015.04.09-10.50.41:672][ 82]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/AIBots/PatrolAIBot/botCharacter.botCharacter]
+[2015.04.09-10.50.41:672][ 82]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/PatrolAIBot/botCharacter]
+[2015.04.09-10.50.41:673][ 82]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/PatrolAIBot/botCharacter" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/PatrolAIBot/botCharacter_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-10.50.41:950][ 82]LogSavePackage: Save=271.593018ms
+[2015.04.09-10.50.41:950][ 82]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/botCharacter_Auto65224027040CCCBDBFA1DB98B975E3A6E.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/PatrolAIBot/botCharacter_Auto6.uasset'
+[2015.04.09-10.50.41:988][ 82]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AIBots/PatrolAIBot/BTS_botDetectEnemy] ([1] browsable assets)...
+[2015.04.09-10.50.41:988][ 82]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/PatrolAIBot/BTS_botDetectEnemy]
+[2015.04.09-10.50.42:249][ 82]LogSavePackage: Save=247.008667ms
+[2015.04.09-10.50.42:249][ 82]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTS_botDetectEnemy_Auto6FA3CF2F545274C866765D6BD66D05B2E.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/PatrolAIBot/BTS_botDetectEnemy_Auto6.uasset'
+[2015.04.09-10.50.42:290][ 82]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AIBots/SleepingAIBot/SleepBot] ([1] browsable assets)...
+[2015.04.09-10.50.42:315][ 82]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/AIBots/SleepingAIBot/SleepBot.SleepBot]
+[2015.04.09-10.50.42:315][ 82]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/SleepingAIBot/SleepBot]
+[2015.04.09-10.50.42:317][ 82]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/SleepBot" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/SleepBot_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-10.50.42:686][ 82]LogSavePackage: Save=363.599457ms
+[2015.04.09-10.50.42:687][ 82]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/SleepBot_Auto6BAAF4FD14187612473D5A4ACB187A377.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/SleepBot_Auto6.uasset'
+[2015.04.09-10.50.42:730][ 82]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AIBots/SleepingAIBot/BTS_DetectSound] ([1] browsable assets)...
+[2015.04.09-10.50.42:730][ 82]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/SleepingAIBot/BTS_DetectSound]
+[2015.04.09-10.50.42:941][ 82]LogSavePackage: Save=176.333862ms
+[2015.04.09-10.50.42:941][ 82]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTS_DetectSound_Auto6A88899B441D1BCF5F30A948E58EDD749.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTS_DetectSound_Auto6.uasset'
+[2015.04.09-10.50.42:978][ 82]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AIBots/SleepingAIBot/BTT_Sleep] ([1] browsable assets)...
+[2015.04.09-10.50.42:978][ 82]OBJ SavePackage: Finished generating thumbnails for package [/Game/AIBots/SleepingAIBot/BTT_Sleep]
+[2015.04.09-10.50.43:005][ 82]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/BTT_Sleep" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-10.50.43:112][ 82]LogSavePackage: Save=101.873924ms
+[2015.04.09-10.50.43:112][ 82]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTT_Sleep_Auto66D66ABAA4E3C4FC90B6F9C865929D223.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/AIBots/SleepingAIBot/BTT_Sleep_Auto6.uasset'
+[2015.04.09-10.50.43:148][ 82]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Traps/PressureTrap] ([1] browsable assets)...
+[2015.04.09-10.50.43:194][ 82]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Traps/PressureTrap.PressureTrap]
+[2015.04.09-10.50.43:194][ 82]OBJ SavePackage: Finished generating thumbnails for package [/Game/Traps/PressureTrap]
+[2015.04.09-10.50.43:195][ 82]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Traps/PressureTrap" FILE="D:/Builds/FirstPersonProject/Saved/Autosaves/Game/Traps/PressureTrap_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2015.04.09-10.50.43:410][ 82]LogSavePackage: Save=213.190430ms
+[2015.04.09-10.50.43:410][ 82]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/PressureTrap_Auto6C940796F455A23C781DE478BD88F8416.tmp' to 'D:/Builds/FirstPersonProject/Saved/Autosaves/Game/Traps/PressureTrap_Auto6.uasset'
+[2015.04.09-10.50.43:414][ 82]LogFileHelpers: Auto-saving content packages took 1.790
+[2015.04.09-10.56.02:254][690]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.04.09-10.56.02:254][690]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_12) Not registered. Aborting.
+[2015.04.09-10.56.20:122][868]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2015.04.09-10.57.47:770][643]BlueprintLog: New page: Compile PressureTrap
+[2015.04.09-10.57.47:861][643]BlueprintEditorCompileResults: Info [9894.73] Compile of PressureTrap successful! [in 90 ms]
+[2015.04.09-10.57.49:861][773]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-10.57.49:861][773]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:57:49 PM)
+[2015.04.09-10.57.49:890][773]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028822s)
+[2015.04.09-10.57.49:891][773]LogPlayLevel: PIE: World Init took: (0.000996s)
+[2015.04.09-10.57.49:891][773]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.030094s)
+[2015.04.09-10.57.49:934][773]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.57.49:936][773]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.57.49:951][773]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.57.49:951][773]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.57.49
+[2015.04.09-10.57.49:957][773]LogWorld: Bringing up level for play took: 0.020333
+[2015.04.09-10.57.50:006][773]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.65
+[2015.04.09-10.58.27:039][675]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_13.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.58.27:039][675]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_13.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.58.27:042][675]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000006A5EECA0
+[2015.04.09-10.58.49:231][170]BlueprintLog: New page: Compile PressureTrap
+[2015.04.09-10.58.49:316][170]BlueprintEditorCompileResults: Info [9956.18] Compile of PressureTrap successful! [in 84 ms]
+[2015.04.09-10.58.50:292][239]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-10.58.50:292][239]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:58:50 PM)
+[2015.04.09-10.58.50:318][239]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025251s)
+[2015.04.09-10.58.50:319][239]LogPlayLevel: PIE: World Init took: (0.000909s)
+[2015.04.09-10.58.50:319][239]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.026573s)
+[2015.04.09-10.58.50:367][239]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.58.50:369][239]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.58.50:377][239]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.58.50:377][239]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.58.50
+[2015.04.09-10.58.50:380][239]LogWorld: Bringing up level for play took: 0.010976
+[2015.04.09-10.58.50:419][239]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 1.062
+[2015.04.09-10.59.06:380][143]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_14.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.59.06:380][143]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_14.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-10.59.06:383][143]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000006D12D300
+[2015.04.09-10.59.36:324][ 40]BlueprintLog: New page: Compile PressureTrap
+[2015.04.09-10.59.36:409][ 40]BlueprintEditorCompileResults: Info [0003.27] Compile of PressureTrap successful! [in 85 ms]
+[2015.04.09-10.59.48:676][735]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-10.59.48:676][735]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 4:59:48 PM)
+[2015.04.09-10.59.48:702][735]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025079s)
+[2015.04.09-10.59.48:703][735]LogPlayLevel: PIE: World Init took: (0.000917s)
+[2015.04.09-10.59.48:703][735]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.026276s)
+[2015.04.09-10.59.48:748][735]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-10.59.48:750][735]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-10.59.48:758][735]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-10.59.48:758][735]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-13.59.48
+[2015.04.09-10.59.48:761][735]LogWorld: Bringing up level for play took: 0.010992
+[2015.04.09-10.59.48:807][735]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.551
+[2015.04.09-11.00.00:830][300]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_15.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-11.00.00:830][300]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_15.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-11.00.00:832][300]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000006B5662A0
+[2015.04.09-11.00.41:744][701]BlueprintLog: New page: Compile PressureTrap
+[2015.04.09-11.00.41:830][701]BlueprintEditorCompileResults: Info [0068.69] Compile of PressureTrap successful! [in 85 ms]
+[2015.04.09-11.00.44:682][876]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-11.00.44:682][876]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 5:00:44 PM)
+[2015.04.09-11.00.44:708][876]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025555s)
+[2015.04.09-11.00.44:709][876]LogPlayLevel: PIE: World Init took: (0.001053s)
+[2015.04.09-11.00.44:709][876]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.026907s)
+[2015.04.09-11.00.44:752][876]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-11.00.44:754][876]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-11.00.44:762][876]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-11.00.44:762][876]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-14.00.44
+[2015.04.09-11.00.44:765][876]LogWorld: Bringing up level for play took: 0.010968
+[2015.04.09-11.00.44:809][876]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.549
+[2015.04.09-11.00.56:126][416]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_16.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-11.00.56:127][416]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_16.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-11.00.56:129][416]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001C654E00
+[2015.04.09-11.01.05:665][969]BlueprintLog: New page: Pre-PIE auto-recompile
+[2015.04.09-11.01.05:674][969]LogPlayLevel: [PIE] Compiling PressureTrap before PIE...
+[2015.04.09-11.01.05:754][969]LogPlayLevel: PIE:  Blueprint regeneration took 88 ms (1 blueprints)
+[2015.04.09-11.01.05:754][969]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 5:01:05 PM)
+[2015.04.09-11.01.05:781][969]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025931s)
+[2015.04.09-11.01.05:782][969]LogPlayLevel: PIE: World Init took: (0.000831s)
+[2015.04.09-11.01.05:782][969]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.027038s)
+[2015.04.09-11.01.05:826][969]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-11.01.05:827][969]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-11.01.05:836][969]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-11.01.05:836][969]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-14.01.05
+[2015.04.09-11.01.05:839][969]LogWorld: Bringing up level for play took: 0.011244
+[2015.04.09-11.01.05:872][969]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.514
+[2015.04.09-11.01.06:822][ 10]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_17.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-11.01.06:822][ 10]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_17.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-11.01.06:878][ 11]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000006D12FC40
+[2015.04.09-11.01.07:802][ 68]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.04.09-11.01.07:802][ 68]PIE: New page: PIE session: FirstPersonExampleMap (Apr 9, 2015, 5:01:07 PM)
+[2015.04.09-11.01.07:830][ 68]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027333s)
+[2015.04.09-11.01.07:831][ 68]LogPlayLevel: PIE: World Init took: (0.000960s)
+[2015.04.09-11.01.07:831][ 68]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.028625s)
+[2015.04.09-11.01.07:880][ 68]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2015.04.09-11.01.07:882][ 68]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2015.04.09-11.01.07:891][ 68]LogWorld:Warning: *** WARNING - PATHS MAY NOT BE VALID ***
+[2015.04.09-11.01.07:891][ 68]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2015.04.09-14.01.07
+[2015.04.09-11.01.07:894][ 68]LogWorld: Bringing up level for play took: 0.011228
+[2015.04.09-11.01.07:936][ 68]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.579
+[2015.04.09-11.01.20:319][695]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: botAI_C_18.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-11.01.20:319][695]LogBehaviorTree:Warning: OnCeaseRelevant called on Blueprint service None with invalid owner.  OwnerComponent: BTComponent, OwnerComponent Owner: SleepBotAI_C_18.  OwnerComponent has BeginDestroyed flag
+[2015.04.09-11.01.20:374][696]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000723CF2E0
+[2015.04.09-11.01.23:501][901]BlueprintLog: New page: Compile PressureTrap
+[2015.04.09-11.01.23:581][901]BlueprintEditorCompileResults: Info [0110.44] Compile of PressureTrap successful! [in 79 ms]
+[2015.04.09-11.01.33:149][461]LogSavePackage: Save=1805.201904ms
+[2015.04.09-11.01.33:149][461]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/FirstPersonExampleMap4B1E58284A6C4CB5431D58B46142A9CC.tmp' to 'D:/Builds/FirstPersonProject/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2015.04.09-11.01.40:836][860]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-11.01.40:853][860]LogMaterial: 0.000089 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-11.01.40:894][860]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-11.01.40:907][860]LogMaterial: Missing cached shader map for material EyeMat, compiling. 
+[2015.04.09-11.01.40:915][860]LogMaterial: 0.002970 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.04.09-11.01.40:938][860]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002C897D80
+[2015.04.09-11.01.47:212][860]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/PatrolAIBot/botCharacter" FILE="D:/Builds/FirstPersonProject/Content/AIBots/PatrolAIBot/botCharacter.uasset" SILENT=true
+[2015.04.09-11.01.47:252][860]LogSavePackage: Save=34.119732ms
+[2015.04.09-11.01.47:252][860]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/botCharacterCF6415D74510BC8F4D1EB7A3E1D92D46.tmp' to 'D:/Builds/FirstPersonProject/Content/AIBots/PatrolAIBot/botCharacter.uasset'
+[2015.04.09-11.01.47:259][860]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/PatrolAIBot/BTS_botDetectEnemy" FILE="D:/Builds/FirstPersonProject/Content/AIBots/PatrolAIBot/BTS_botDetectEnemy.uasset" SILENT=true
+[2015.04.09-11.01.47:410][860]LogSavePackage: Save=146.146423ms
+[2015.04.09-11.01.47:410][860]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTS_botDetectEnemy61DC5D7A49C4481E4C82B5BEE458C843.tmp' to 'D:/Builds/FirstPersonProject/Content/AIBots/PatrolAIBot/BTS_botDetectEnemy.uasset'
+[2015.04.09-11.01.47:418][860]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/BTS_DetectSound" FILE="D:/Builds/FirstPersonProject/Content/AIBots/SleepingAIBot/BTS_DetectSound.uasset" SILENT=true
+[2015.04.09-11.01.47:519][860]LogSavePackage: Save=95.628815ms
+[2015.04.09-11.01.47:519][860]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTS_DetectSoundE94F287C42AF255C5C7E178A625885AA.tmp' to 'D:/Builds/FirstPersonProject/Content/AIBots/SleepingAIBot/BTS_DetectSound.uasset'
+[2015.04.09-11.01.47:527][860]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/BTT_Sleep" FILE="D:/Builds/FirstPersonProject/Content/AIBots/SleepingAIBot/BTT_Sleep.uasset" SILENT=true
+[2015.04.09-11.01.47:575][860]LogSavePackage: Save=43.514568ms
+[2015.04.09-11.01.47:575][860]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/BTT_SleepCA447456425E3FC0090706ADBC69610D.tmp' to 'D:/Builds/FirstPersonProject/Content/AIBots/SleepingAIBot/BTT_Sleep.uasset'
+[2015.04.09-11.01.47:592][860]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/SleepBot" FILE="D:/Builds/FirstPersonProject/Content/AIBots/SleepingAIBot/SleepBot.uasset" SILENT=true
+[2015.04.09-11.01.47:625][860]LogSavePackage: Save=27.150324ms
+[2015.04.09-11.01.47:625][860]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/SleepBot948DBEF74AF12D037A33448C5DD1EE55.tmp' to 'D:/Builds/FirstPersonProject/Content/AIBots/SleepingAIBot/SleepBot.uasset'
+[2015.04.09-11.01.47:633][860]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AIBots/SleepingAIBot/SleepBotTree" FILE="D:/Builds/FirstPersonProject/Content/AIBots/SleepingAIBot/SleepBotTree.uasset" SILENT=true
+[2015.04.09-11.01.47:653][860]LogSavePackage: Save=6.747793ms
+[2015.04.09-11.01.47:653][860]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/SleepBotTree3FD4CC5C481CE8AFE9D48A93DF9A5CE5.tmp' to 'D:/Builds/FirstPersonProject/Content/AIBots/SleepingAIBot/SleepBotTree.uasset'
+[2015.04.09-11.01.47:687][860]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/EyeMat" FILE="D:/Builds/FirstPersonProject/Content/EyeMat.uasset" SILENT=true
+[2015.04.09-11.01.48:039][860]LogSavePackage: Save=320.760529ms
+[2015.04.09-11.01.48:039][860]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/EyeMat861E56934C830E593E22A780B88F2953.tmp' to 'D:/Builds/FirstPersonProject/Content/EyeMat.uasset'
+[2015.04.09-11.01.50:079][860]LogSavePackage: Save=1828.518799ms
+[2015.04.09-11.01.50:079][860]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/FirstPersonExampleMap75080CC34135EAA00A706EB3AF3F8B0E.tmp' to 'D:/Builds/FirstPersonProject/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2015.04.09-11.01.50:095][860]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 2.050
+[2015.04.09-11.01.50:112][860]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Traps/PressureTrap" FILE="D:/Builds/FirstPersonProject/Content/Traps/PressureTrap.uasset" SILENT=true
+[2015.04.09-11.01.50:244][860]LogSavePackage: Save=131.255096ms
+[2015.04.09-11.01.50:244][860]LogSavePackage: Moving 'D:/Builds/FirstPersonProject/Saved/PressureTrapB74EE2334FC3DE460B623DB88A83FF5F.tmp' to 'D:/Builds/FirstPersonProject/Content/Traps/PressureTrap.uasset'
+[2015.04.09-11.01.51:077][861]Cmd: QUIT_EDITOR
+[2015.04.09-11.01.51:499][861]LogExit: Preparing to exit.
+[2015.04.09-11.01.52:679][861]LogExit: Editor shut down
+[2015.04.09-11.01.52:679][861]LogExit: Transaction tracking system shut down
+[2015.04.09-11.01.52:680][861]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001442C860
+[2015.04.09-11.01.52:687][861]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000D134EA0
+[2015.04.09-11.01.52:687][861]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002CF11760
+[2015.04.09-11.01.52:687][861]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000018ECFC40
+[2015.04.09-11.01.52:688][861]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001BFEE160
+[2015.04.09-11.01.52:688][861]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001BE87600
+[2015.04.09-11.01.52:688][861]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000022739440
+[2015.04.09-11.01.52:688][861]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000247CD620
+[2015.04.09-11.01.52:688][861]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000CEFEC00
+[2015.04.09-11.01.52:690][861]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000D178A40
+[2015.04.09-11.01.52:690][861]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000242398A0
+[2015.04.09-11.01.54:042][861]LogExit: Object subsystem successfully closed.
+[2015.04.09-11.01.54:662][861]LogModuleManager: Shutting down and abandoning module MaterialEditor (178)
+[2015.04.09-11.01.54:662][861]LogModuleManager: Shutting down and abandoning module CrashTracker (177)
+[2015.04.09-11.01.54:662][861]LogModuleManager: Shutting down and abandoning module SuperSearch (176)
+[2015.04.09-11.01.54:662][861]LogModuleManager: Shutting down and abandoning module SceneOutliner (175)
+[2015.04.09-11.01.54:662][861]LogModuleManager: Shutting down and abandoning module EditorWidgets (174)
+[2015.04.09-11.01.54:662][861]LogModuleManager: Shutting down and abandoning module CollectionManager (173)
+[2015.04.09-11.01.54:672][861]LogModuleManager: Shutting down and abandoning module StatsViewer (172)
+[2015.04.09-11.01.54:692][861]LogModuleManager: Shutting down and abandoning module FoliageEdit (171)
+[2015.04.09-11.01.54:692][861]LogModuleManager: Shutting down and abandoning module LandscapeEditor (170)
+[2015.04.09-11.01.54:711][861]LogModuleManager: Shutting down and abandoning module MeshPaint (169)
+[2015.04.09-11.01.54:729][861]LogModuleManager: Shutting down and abandoning module ActorPickerMode (168)
+[2015.04.09-11.01.54:729][861]LogModuleManager: Shutting down and abandoning module GeometryMode (167)
+[2015.04.09-11.01.54:729][861]LogModuleManager: Shutting down and abandoning module TextureAlignMode (166)
+[2015.04.09-11.01.54:729][861]LogModuleManager: Shutting down and abandoning module BspMode (165)
+[2015.04.09-11.01.54:729][861]LogModuleManager: Shutting down and abandoning module PlacementMode (164)
+[2015.04.09-11.01.54:729][861]LogModuleManager: Shutting down and abandoning module AutomationWorker (163)
+[2015.04.09-11.01.54:729][861]LogModuleManager: Shutting down and abandoning module CharacterAI (162)
+[2015.04.09-11.01.54:729][861]LogModuleManager: Shutting down and abandoning module SmartSnapping (161)
+[2015.04.09-11.01.54:729][861]LogModuleManager: Shutting down and abandoning module ViewportSnapping (160)
+[2015.04.09-11.01.54:729][861]LogModuleManager: Shutting down and abandoning module LogVisualizer (159)
+[2015.04.09-11.01.55:187][861]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (158)
+[2015.04.09-11.01.55:259][861]LogModuleManager: Shutting down and abandoning module IntroTutorials (157)
+[2015.04.09-11.01.55:415][861]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (156)
+[2015.04.09-11.01.55:426][861]LogModuleManager: Shutting down and abandoning module HardwareTargeting (155)
+[2015.04.09-11.01.55:426][861]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (154)
+[2015.04.09-11.01.55:495][861]LogModuleManager: Shutting down and abandoning module UndoHistory (153)
+[2015.04.09-11.01.55:865][861]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (152)
+[2015.04.09-11.01.55:865][861]LogModuleManager: Shutting down and abandoning module UserFeedback (151)
+[2015.04.09-11.01.55:865][861]LogModuleManager: Shutting down and abandoning module XmlParser (150)
+[2015.04.09-11.01.55:875][861]LogModuleManager: Shutting down and abandoning module Blutility (149)
+[2015.04.09-11.01.55:875][861]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (148)
+[2015.04.09-11.01.55:875][861]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (147)
+[2015.04.09-11.01.55:875][861]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (146)
+[2015.04.09-11.01.56:461][861]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (145)
+[2015.04.09-11.01.56:461][861]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (144)
+[2015.04.09-11.01.56:461][861]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (143)
+[2015.04.09-11.01.56:484][861]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (142)
+[2015.04.09-11.01.56:484][861]LogModuleManager: Shutting down and abandoning module InputBindingEditor (141)
+[2015.04.09-11.01.56:579][861]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (140)
+[2015.04.09-11.01.56:579][861]LogModuleManager: Shutting down and abandoning module SettingsEditor (139)
+[2015.04.09-11.01.56:609][861]LogModuleManager: Shutting down and abandoning module ProjectLauncher (138)
+[2015.04.09-11.01.56:668][861]LogModuleManager: Shutting down and abandoning module SessionFrontend (137)
+[2015.04.09-11.01.56:699][861]LogModuleManager: Shutting down and abandoning module ProfilerClient (136)
+[2015.04.09-11.01.56:730][861]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (135)
+[2015.04.09-11.01.56:730][861]LogModuleManager: Shutting down and abandoning module DeviceManager (134)
+[2015.04.09-11.01.56:766][861]LogModuleManager: Shutting down and abandoning module AutomationController (133)
+[2015.04.09-11.01.56:794][861]LogModuleManager: Shutting down and abandoning module AutomationWindow (132)
+[2015.04.09-11.01.56:826][861]LogModuleManager: Shutting down and abandoning module Layers (131)
+[2015.04.09-11.01.56:906][861]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (130)
+[2015.04.09-11.01.56:906][861]LogModuleManager: Shutting down and abandoning module DetailCustomizations (129)
+[2015.04.09-11.01.56:906][861]LogModuleManager: Shutting down and abandoning module PackagesDialog (128)
+[2015.04.09-11.01.56:906][861]LogModuleManager: Shutting down and abandoning module AssetRegistry (127)
+[2015.04.09-11.01.56:931][861]LogModuleManager: Shutting down and abandoning module Persona (126)
+[2015.04.09-11.01.57:383][861]LogModuleManager: Shutting down and abandoning module SlateReflector (125)
+[2015.04.09-11.01.57:505][861]LogModuleManager: Shutting down and abandoning module LevelEditor (124)
+[2015.04.09-11.01.57:541][861]LogModuleManager: Shutting down and abandoning module Kismet (123)
+[2015.04.09-11.01.57:541][861]LogModuleManager: Shutting down and abandoning module GraphEditor (122)
+[2015.04.09-11.01.57:541][861]LogModuleManager: Shutting down and abandoning module ClassViewer (121)
+[2015.04.09-11.01.57:541][861]LogModuleManager: Shutting down and abandoning module Toolbox (120)
+[2015.04.09-11.01.57:541][861]LogModuleManager: Shutting down and abandoning module ModuleUI (119)
+[2015.04.09-11.01.57:554][861]LogModuleManager: Shutting down and abandoning module MovieSceneTools (118)
+[2015.04.09-11.01.57:728][861]LogModuleManager: Shutting down and abandoning module OutputLog (117)
+[2015.04.09-11.01.57:728][861]LogModuleManager: Shutting down and abandoning module GammaUI (116)
+[2015.04.09-11.01.57:738][861]LogModuleManager: Shutting down and abandoning module Documentation (115)
+[2015.04.09-11.01.57:739][861]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (114)
+[2015.04.09-11.01.57:753][861]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (113)
+[2015.04.09-11.01.57:761][861]LogModuleManager: Shutting down and abandoning module HTTP (112)
+[2015.04.09-11.01.57:761][861]LogModuleManager: Shutting down and abandoning module AnalyticsET (111)
+[2015.04.09-11.01.57:761][861]LogModuleManager: Shutting down and abandoning module Analytics (110)
+[2015.04.09-11.01.57:761][861]LogModuleManager: Shutting down and abandoning module AITestSuite (109)
+[2015.04.09-11.01.57:771][861]LogModuleManager: Shutting down and abandoning module GameplayDebugger (108)
+[2015.04.09-11.01.57:771][861]LogModuleManager: Shutting down and abandoning module AIModule (107)
+[2015.04.09-11.01.57:779][861]LogModuleManager: Shutting down and abandoning module ProfilerService (106)
+[2015.04.09-11.01.57:948][861]LogModuleManager: Shutting down and abandoning module TaskGraph (105)
+[2015.04.09-11.01.57:970][861]LogModuleManager: Shutting down and abandoning module SlateRemote (104)
+[2015.04.09-11.01.57:970][861]LogModuleManager: Shutting down and abandoning module ScriptEditorPlugin (103)
+[2015.04.09-11.01.57:970][861]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (102)
+[2015.04.09-11.01.57:970][861]LogModuleManager: Shutting down and abandoning module CableComponent (101)
+[2015.04.09-11.01.57:984][861]LogModuleManager: Shutting down and abandoning module MessagingDebugger (100)
+[2015.04.09-11.01.58:017][861]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (99)
+[2015.04.09-11.01.58:034][861]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (98)
+[2015.04.09-11.01.58:034][861]LogModuleManager: Shutting down and abandoning module PluginsEditor (97)
+[2015.04.09-11.01.58:050][861]LogModuleManager: Shutting down and abandoning module MainFrame (96)
+[2015.04.09-11.01.58:050][861]LogModuleManager: Shutting down and abandoning module EpicSurvey (95)
+[2015.04.09-11.01.58:073][861]LogModuleManager: Shutting down and abandoning module DesktopPlatform (94)
+[2015.04.09-11.01.58:124][861]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (93)
+[2015.04.09-11.01.58:125][861]LogModuleManager: Shutting down and abandoning module HotReload (92)
+[2015.04.09-11.01.58:125][861]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (91)
+[2015.04.09-11.01.58:125][861]LogModuleManager: Shutting down and abandoning module UObjectPlugin (90)
+[2015.04.09-11.01.58:125][861]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (89)
+[2015.04.09-11.01.58:160][861]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (88)
+[2015.04.09-11.01.58:185][861]LogModuleManager: Shutting down and abandoning module SourceControl (87)
+[2015.04.09-11.01.58:202][861]LogModuleManager: Shutting down and abandoning module GitSourceControl (86)
+[2015.04.09-11.01.58:210][861]LogModuleManager: Shutting down and abandoning module BlankPlugin (85)
+[2015.04.09-11.01.58:210][861]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (84)
+[2015.04.09-11.01.58:210][861]LogModuleManager: Shutting down and abandoning module PaperJsonImporter (83)
+[2015.04.09-11.01.58:210][861]LogModuleManager: Shutting down and abandoning module ContentBrowser (82)
+[2015.04.09-11.01.58:210][861]LogModuleManager: Shutting down and abandoning module Paper2DEditor (81)
+[2015.04.09-11.01.58:314][861]LogModuleManager: Shutting down and abandoning module ScriptPlugin (80)
+[2015.04.09-11.01.58:320][861]LogModuleManager: Shutting down and abandoning module UdpMessaging (79)
+[2015.04.09-11.01.58:420][861]LogModuleManager: Shutting down and abandoning module Paper2D (78)
+[2015.04.09-11.01.58:435][861]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (77)
+[2015.04.09-11.01.58:478][861]LogModuleManager: Shutting down and abandoning module Media (76)
+[2015.04.09-11.01.58:478][861]LogModuleManager: Shutting down and abandoning module WmfMedia (75)
+[2015.04.09-11.01.58:480][861]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (74)
+[2015.04.09-11.01.58:480][861]LogModuleManager: Shutting down and abandoning module PropertyEditor (73)
+[2015.04.09-11.01.58:480][861]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (72)
+[2015.04.09-11.01.58:480][861]LogModuleManager: Shutting down and abandoning module FunctionalTesting (71)
+[2015.04.09-11.01.58:495][861]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (70)
+[2015.04.09-11.01.58:510][861]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (69)
+[2015.04.09-11.01.58:510][861]LogModuleManager: Shutting down and abandoning module MessageLog (68)
+[2015.04.09-11.01.58:510][861]LogModuleManager: Shutting down and abandoning module Sequencer (67)
+[2015.04.09-11.01.58:628][861]LogModuleManager: Shutting down and abandoning module AssetTools (66)
+[2015.04.09-11.01.58:694][861]LogModuleManager: Shutting down and abandoning module UMGEditor (65)
+[2015.04.09-11.01.58:761][861]LogModuleManager: Shutting down and abandoning module UMG (64)
+[2015.04.09-11.01.58:775][861]LogModuleManager: Shutting down and abandoning module Slate (63)
+[2015.04.09-11.01.58:775][861]LogModuleManager: Shutting down and abandoning module EditorStyle (62)
+[2015.04.09-11.01.58:779][861]LogModuleManager: Shutting down and abandoning module SessionServices (61)
+[2015.04.09-11.01.58:779][861]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (60)
+[2015.04.09-11.01.58:779][861]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (59)
+[2015.04.09-11.01.58:779][861]LogModuleManager: Shutting down and abandoning module XAudio2 (58)
+[2015.04.09-11.01.58:779][861]LogModuleManager: Shutting down and abandoning module Networking (56)
+[2015.04.09-11.01.58:779][861]LogModuleManager: Shutting down and abandoning module Core (55)
+[2015.04.09-11.01.58:779][861]LogModuleManager: Shutting down and abandoning module KismetCompiler (54)
+[2015.04.09-11.01.58:779][861]LogModuleManager: Shutting down and abandoning module PhysXFormats (53)
+[2015.04.09-11.01.58:779][861]LogModuleManager: Shutting down and abandoning module MeshUtilities (52)
+[2015.04.09-11.01.58:850][861]LogModuleManager: Shutting down and abandoning module DerivedDataCache (51)
+[2015.04.09-11.01.58:930][861]LogDerivedDataCache: Shutdown
+[2015.04.09-11.01.58:930][861]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (50)
+[2015.04.09-11.01.58:947][861]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (49)
+[2015.04.09-11.01.58:959][861]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (48)
+[2015.04.09-11.01.58:968][861]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (47)
+[2015.04.09-11.01.58:968][861]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (46)
+[2015.04.09-11.01.58:975][861]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (45)
+[2015.04.09-11.01.58:989][861]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (44)
+[2015.04.09-11.01.58:990][861]LogModuleManager: Shutting down and abandoning module ImageWrapper (43)
+[2015.04.09-11.01.58:990][861]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (42)
+[2015.04.09-11.01.58:997][861]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (41)
+[2015.04.09-11.01.58:997][861]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (40)
+[2015.04.09-11.01.59:005][861]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (39)
+[2015.04.09-11.01.59:005][861]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (38)
+[2015.04.09-11.01.59:005][861]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (37)
+[2015.04.09-11.01.59:006][861]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (36)
+[2015.04.09-11.01.59:013][861]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (35)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module Messaging (34)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (33)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (32)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (31)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (30)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (29)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module Android_ES31TargetPlatform (28)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (27)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (26)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (25)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (24)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (23)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (22)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (21)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module TargetPlatform (20)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module InputCore (19)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module Settings (18)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (16)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module OculusRift (15)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (14)
+[2015.04.09-11.01.59:025][861]LogModuleManager: Shutting down and abandoning module TextureCompressor (13)
+[2015.04.09-11.01.59:034][861]LogModuleManager: Shutting down and abandoning module ShaderCore (12)
+[2015.04.09-11.01.59:034][861]LogModuleManager: Shutting down and abandoning module Landscape (11)
+[2015.04.09-11.01.59:034][861]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (10)
+[2015.04.09-11.01.59:056][861]LogModuleManager: Shutting down and abandoning module OpenGLDrv (9)
+[2015.04.09-11.01.59:056][861]LogModuleManager: Shutting down and abandoning module D3D11RHI (8)
+[2015.04.09-11.01.59:056][861]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2015.04.09-11.01.59:056][861]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2015.04.09-11.01.59:056][861]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2015.04.09-11.01.59:056][861]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2015.04.09-11.01.59:073][861]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2015.04.09-11.01.59:082][861]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2015.04.09-11.01.59:088][861]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2015.04.09-11.01.59:118][861]LogExit: Exiting.
+[2015.04.09-11.01.59:127][861]Log file closed, 04/09/15 14:01:59
